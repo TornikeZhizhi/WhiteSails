@@ -48,9 +48,10 @@
 	 height: calc(100vh - 80px);
 	 bottom:0;
 	 left: 0;
-	 background: rgba(234, 234, 234, .2);
+	 background: $orange;
 	 z-index: -1;
-	 transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+	 transition: 0.8s;
+	 /*transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;*/
 	 transform: translateX(0%) translateX(-100%);
 }
  .nav:after {
@@ -77,8 +78,7 @@
     }
 
     .header_slider_fluid {
-    	/*background-color: red;*/
-    	height: 100%;
+    padding: 0px 140px 15px 100px;
     }
 }
  .nav__list-item {
@@ -141,6 +141,31 @@ body.nav-active .menu_close{
 transform: translateX(2px) translateY(5px) rotate(45deg);
 }
 
+.header_swiper_title {
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(10%,40px);
+	
+}
+.header_swiper  {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(10%);
+}
+ body.nav-active .header_swiper{
+	transition: all .3s .6s;
+ 	opacity: 1;
+ 	visibility: visible;
+ 	transform: translate(0%);
+ }
+
+ body.nav-active .header_swiper_title{
+transition: all .3s .7s;
+ 	opacity: 1;
+ 	visibility: visible;
+ 	transform: translate(0%, 40px);
+
+ }
 
  body.nav-active .menu-icon__line-right {
 	     transform: translateX(2px) translateY(-1px) rotate(-45deg);
@@ -409,4 +434,47 @@ transform: translateX(2px) translateY(5px) rotate(45deg);
  	transform: translateY(0%);
 
  	}
+}
+
+
+.header_swiper_title {
+
+	    text-align: right;
+    
+    position: relative;
+    z-index: 3;
+	h2 {
+		@include family(noto);
+		font-size: 45px;
+		color: $text-color;
+		 line-height: 48px;
+
+		span {
+			display: block;
+		}
+
+	}
+}
+
+.header_swiper_box {
+	height: inherit;
+
+	h3 {
+		margin-left: 95px;
+		background-color: #fff;
+		@include family(noto);
+		font-size: 25px;
+		color: $text-color;
+		text-align: left;
+	}
+	a {
+
+		display: block;
+		height: calc(100% - 60px);
+		img {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
 }

@@ -42,5 +42,14 @@ $(document).ready(function() {
 		$(this).addClass("active")
 	})
 
+ var swiper = new Swiper('.swiper-container.header_swiper', {
+ 	 effect: 'fade',
+ 	 loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
 	
 })
