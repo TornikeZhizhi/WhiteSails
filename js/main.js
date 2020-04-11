@@ -28,6 +28,10 @@ const app = (() => {
 
 $(document).ready(function() {
 	
+	if ($("#home_wrapper").length > 0) {
+
+		$("body").css("overflow","hidden")
+	}
 
 //Language	
 	$(document).on("click",function(){
@@ -41,7 +45,10 @@ $(document).ready(function() {
 		$(".language_dropdown li").slideDown(200);
 		$(this).addClass("active")
 	})
+	//
 
+
+//Header Swipper
 var interleaveOffset = 0.5;
 
 var swiperOptions = {
@@ -83,6 +90,12 @@ var swiperOptions = {
   }
 };
 
-var swiper = new Swiper(".swiper-container", swiperOptions);
+var swiper = new Swiper(".swiper-container.header_swiper", swiperOptions);
 	
+
+
+//Home Mina Swipper
+
+
+
 })
