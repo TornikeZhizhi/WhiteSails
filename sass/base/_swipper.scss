@@ -36,3 +36,16 @@
 	}
 }  
 
+.swipper_carousel_arroow_fluid {
+	background-color: #fff;
+    width: 79px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1999;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+

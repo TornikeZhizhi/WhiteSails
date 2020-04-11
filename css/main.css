@@ -70,6 +70,17 @@ a:hover {
     top: unset;
     bottom: 10px; }
 
+.swipper_carousel_arroow_fluid {
+  background-color: #fff;
+  width: 79px;
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1999; }
+
+.swiper-slide {
+  overflow: hidden; }
+
 .site-content {
   max-width: 1100px;
   height: 100vh;
@@ -145,7 +156,27 @@ a:hover {
     max-width: 50%;
     height: 100%; }
   .nav__content .header_slider_fluid {
-    padding: 0px 140px 15px 100px; }
+    padding: 0px 140px 15px 100px;
+    position: relative; }
+
+.header_social {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 10; }
+  .header_social a {
+    color: #2C3E50;
+    font-size: 14px;
+    font-family: "Conv_bpg_algeti", sans-serif; }
+    .header_social a:lang(en) {
+      font-family: "Noto Serif italic", sans-serif; }
+    .header_social a:lang(ka) {
+      font-family: "Noto Serif italic", sans-serif; }
+    .header_social a:lang(ru) {
+      font-family: "Noto Serif italic", sans-serif; }
+    .header_social a img {
+      padding-left: 5px;
+      height: 15px; }
 
 .nav__list-item {
   position: relative;
@@ -210,19 +241,19 @@ body.nav-active .menu-icon__line-left {
   visibility: hidden;
   transform: translate(10%, 40px); }
 
-.header_swiper {
+.header_swiper, .header_social {
   opacity: 0;
   visibility: hidden;
   transform: translateX(10%); }
 
-body.nav-active .header_swiper {
+body.nav-active .header_swiper, body.nav-active .header_social {
   transition: all .3s .6s;
   opacity: 1;
   visibility: visible;
   transform: translate(0%); }
 
 body.nav-active .header_swiper_title {
-  transition: all .3s .7s;
+  transition: all .5s .7s;
   opacity: 1;
   visibility: visible;
   transform: translate(0%, 40px); }
@@ -384,7 +415,13 @@ body.nav-active .nav__list-item:nth-child(10) {
     z-index: 10; }
     .header_languages .language_dropdown li {
       background-color: #F4FAFA;
-      display: none; }
+      display: none;
+      transition: all .3s; }
+      .header_languages .language_dropdown li:hover {
+        background: #74C9BE;
+        color: #fff; }
+        .header_languages .language_dropdown li:hover a {
+          color: #fff; }
 
 .nav__list li a {
   font-family: "Conv_bpg_algeti", sans-serif;
@@ -482,16 +519,20 @@ body.nav-active .navigation_footer span {
   .header_swiper_box h3 {
     margin-left: 95px;
     background-color: #fff;
-    font-family: "Conv_bpg_algeti", sans-serif;
-    font-size: 25px;
-    color: #2C3E50;
     text-align: left; }
-    .header_swiper_box h3:lang(en) {
-      font-family: "Noto Serif italic", sans-serif; }
-    .header_swiper_box h3:lang(ka) {
-      font-family: "Noto Serif italic", sans-serif; }
-    .header_swiper_box h3:lang(ru) {
-      font-family: "Noto Serif italic", sans-serif; }
+    .header_swiper_box h3 a {
+      font-family: "Conv_bpg_algeti", sans-serif;
+      font-size: 25px;
+      color: #2C3E50;
+      transition: all .3s; }
+      .header_swiper_box h3 a:lang(en) {
+        font-family: "Noto Serif italic", sans-serif; }
+      .header_swiper_box h3 a:lang(ka) {
+        font-family: "Noto Serif italic", sans-serif; }
+      .header_swiper_box h3 a:lang(ru) {
+        font-family: "Noto Serif italic", sans-serif; }
+      .header_swiper_box h3 a:hover {
+        letter-spacing: 1px; }
   .header_swiper_box a {
     display: block;
     height: calc(100% - 60px); }
