@@ -43,10 +43,19 @@ $orange:#FFD393;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Regular.woff2') format('woff2'),
+        url('../fonts/NotoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 $segoe: 'Conv_Segoe UI';
 $noto: 'Noto Serif italic';
 $notoregular: 'Noto Serif';
 $algeti: 'Conv_bpg_algeti';
+$notosans: 'Noto Sans';
 
 
 $en-title: $algeti;
@@ -59,6 +68,10 @@ $en-noto : $noto;
 $ge-noto : $noto;
 $ru-noto : $noto;
 
+$en-notosans : $notosans;
+$ge-notosans : $notosans;
+$ru-notosans : $notosans;
+
 $en-notoregular : $notoregular;
 $ge-notoregular : $notoregular;
 $ru-notoregular : $notoregular;
@@ -68,6 +81,19 @@ $default-text: $ge-text;
 
 
 @mixin family($name) {
+     @if($name == "notosans"){
+        font-family: $default-title, sans-serif;
+
+        &:lang(en){
+            font-family: $en-notosans, sans-serif;
+        }
+        &:lang(ka){
+            font-family: $ge-notosans, sans-serif;
+        }
+        &:lang(ru){
+            font-family: $ge-notosans, sans-serif;
+        }
+    }
 	 @if($name == "notoregular"){
         font-family: $default-title, sans-serif;
 

@@ -47,13 +47,13 @@
 
 .cd-section>div {
 	padding-top: 80px;
+	height: 100%;
 }
 
 
 .main_link_box_fluid {
 	    position: relative;
     display: inline-block;
-    margin: 20px;
     height: 32px;
 	.main_btn_arrow {
 	position: absolute;
@@ -72,3 +72,63 @@
 	}
 
 }
+
+
+.cd_section_1_fluid {
+	display: flex;
+	height: 100%;
+
+	&>div {
+		flex-grow: 1;
+		&:first-child {
+		flex: 1 0 45%;
+    max-width: 45%;
+    padding: 1% 0% 1% 6%;
+    position: relative;
+    z-index: 10;
+		}
+	}
+
+	.cd_section_left {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		padding-bottom: 11%;
+    transform: translateX(6%);
+
+	}
+
+	.cd_section_1_title {
+
+		h2,a {
+			font-size: 80px;
+			@include family(notoregular);
+			color: $text-color;
+		}
+	}
+
+	.cd_section_1_text {
+		max-width: 80%;
+		width: 100%;
+		p {
+
+			@include family(notosans);
+			font-size: 16px;
+			color: $text-color;
+		}
+	}
+}
+
+.Whitesails_main_img {
+	padding-top: 3%;
+
+	 img {
+	 	    width: auto;
+		    height: calc(100vh - 45px);
+		    display: block;	
+	 }
+}
+
+

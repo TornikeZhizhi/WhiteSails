@@ -50,6 +50,11 @@ a:hover {
   src: url("../fonts/NotoSerif.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSerif.woff2") format("woff2"), url("../fonts/NotoSerif.woff") format("woff"), url("../fonts/NotoSerif.ttf") format("truetype"), url("../fonts/NotoSerif.svg#NotoSerif") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Noto Sans';
+  src: url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
@@ -69,11 +74,6 @@ body::before {
 /*}*/
 .cd-section {
   height: 100vh; }
-
-.cd-section h2 {
-  line-height: 100vh;
-  text-align: center;
-  font-size: 2.4rem; }
 
 /*.cd-section:first-of-type > div {
   background-color: #2b334f;
@@ -107,21 +107,6 @@ body::before {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-[data-animation="parallax"] .cd-section:first-of-type > div, [data-animation="fixed"] .cd-section:first-of-type > div, [data-animation="opacity"] .cd-section:first-of-type > div {
-  background-image: url("../img/img-1.jpg"); }
-
-[data-animation="parallax"] .cd-section:nth-of-type(2) > div, [data-animation="fixed"] .cd-section:nth-of-type(2) > div, [data-animation="opacity"] .cd-section:nth-of-type(2) > div {
-  background-image: url("../img/img-2.jpg"); }
-
-[data-animation="parallax"] .cd-section:nth-of-type(3) > div, [data-animation="fixed"] .cd-section:nth-of-type(3) > div, [data-animation="opacity"] .cd-section:nth-of-type(3) > div {
-  background-image: url("../img/img-3.jpg"); }
-
-[data-animation="parallax"] .cd-section:nth-of-type(4) > div, [data-animation="fixed"] .cd-section:nth-of-type(4) > div, [data-animation="opacity"] .cd-section:nth-of-type(4) > div {
-  background-image: url("../img/img-4.jpg"); }
-
-[data-animation="parallax"] .cd-section:nth-of-type(5) > div, [data-animation="fixed"] .cd-section:nth-of-type(5) > div, [data-animation="opacity"] .cd-section:nth-of-type(5) > div {
-  background-image: url("../img/img-5.jpg"); }
 
 /*@media only screen and (min-width: 1050px) {*/
 .cd-section h2 {
@@ -213,7 +198,7 @@ body::before {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: url(../img/cd-icon-arrow.svg) no-repeat center center; }
+  /*background: url(../img/cd-icon-arrow.svg) no-repeat center center;*/ }
 
 .cd-vertical-nav a.cd-prev {
   -webkit-transform: rotate(180deg);
@@ -242,6 +227,57 @@ body::before {
 .cd-section.visible h2 {
   transform: translateY(0%); }
 
+.Whitesails_main_img {
+  animation: fadeInRight 1.5s ease-out forwards; }
+
+body {
+  overflow: hidden; }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.cd_section_1_text {
+  position: relative; }
+  .cd_section_1_text:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    animation: textShrink 0.7s 0.3s linear forwards; }
+
+@keyframes textShrink {
+  0% {
+    height: 100%; }
+  100% {
+    height: 0%; } }
+.cd_section_1_title {
+  position: relative; }
+  .cd_section_1_title:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    animation: textShrinkTittle 0.5s 0.8s linear forwards; }
+
+@keyframes textShrinkTittle {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0%; } }
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -788,12 +824,12 @@ body.nav-active .navigation_footer span {
   display: inline-block; }
 
 .cd-section > div {
-  padding-top: 80px; }
+  padding-top: 80px;
+  height: 100%; }
 
 .main_link_box_fluid {
   position: relative;
   display: inline-block;
-  margin: 20px;
   height: 32px; }
   .main_link_box_fluid .main_btn_arrow {
     position: absolute;
@@ -804,5 +840,55 @@ body.nav-active .navigation_footer span {
     transition: all .3s; }
   .main_link_box_fluid:hover img {
     transform: translate(2px, -50%); }
+
+.cd_section_1_fluid {
+  display: flex;
+  height: 100%; }
+  .cd_section_1_fluid > div {
+    flex-grow: 1; }
+    .cd_section_1_fluid > div:first-child {
+      flex: 1 0 45%;
+      max-width: 45%;
+      padding: 1% 0% 1% 6%;
+      position: relative;
+      z-index: 10; }
+  .cd_section_1_fluid .cd_section_left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 11%;
+    transform: translateX(6%); }
+  .cd_section_1_fluid .cd_section_1_title h2, .cd_section_1_fluid .cd_section_1_title a {
+    font-size: 80px;
+    font-family: "Conv_bpg_algeti", sans-serif;
+    color: #2C3E50; }
+    .cd_section_1_fluid .cd_section_1_title h2:lang(en), .cd_section_1_fluid .cd_section_1_title a:lang(en) {
+      font-family: "Noto Serif", sans-serif; }
+    .cd_section_1_fluid .cd_section_1_title h2:lang(ka), .cd_section_1_fluid .cd_section_1_title a:lang(ka) {
+      font-family: "Noto Serif", sans-serif; }
+    .cd_section_1_fluid .cd_section_1_title h2:lang(ru), .cd_section_1_fluid .cd_section_1_title a:lang(ru) {
+      font-family: "Noto Serif", sans-serif; }
+  .cd_section_1_fluid .cd_section_1_text {
+    max-width: 80%;
+    width: 100%; }
+    .cd_section_1_fluid .cd_section_1_text p {
+      font-family: "Conv_bpg_algeti", sans-serif;
+      font-size: 16px;
+      color: #2C3E50; }
+      .cd_section_1_fluid .cd_section_1_text p:lang(en) {
+        font-family: "Noto Sans", sans-serif; }
+      .cd_section_1_fluid .cd_section_1_text p:lang(ka) {
+        font-family: "Noto Sans", sans-serif; }
+      .cd_section_1_fluid .cd_section_1_text p:lang(ru) {
+        font-family: "Noto Sans", sans-serif; }
+
+.Whitesails_main_img {
+  padding-top: 3%; }
+  .Whitesails_main_img img {
+    width: auto;
+    height: calc(100vh - 45px);
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
