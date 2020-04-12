@@ -92,23 +92,24 @@ var swiperOptions = {
 
 var swiper = new Swiper(".swiper-container.header_swiper", swiperOptions);
 	
-var swiper = new Swiper('.swiper-container.main_about_swipper', {
-      // slidesPerView: 'auto',
-      
-      loop: true,
-  speed: 1000,
-  grabCursor: true,
-  watchSlidesProgress: true,
-  mousewheelControl: true,
-  keyboardControl: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-    });
-
-//Home Mina Swipper
 
 
+$('.home_about_slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: true,
+  speed:1000,
+
+  autoplaySpeed: 3000,
+  prevArrow: $(".arrow_left"),
+    nextArrow: $(".arrow_right")
+
+});
+
+
+
+$(".right_dot").click(function(){
+	$(".cd-next").click()
+})
 
 })

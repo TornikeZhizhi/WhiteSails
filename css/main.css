@@ -278,6 +278,113 @@ body {
     width: 100%; }
   100% {
     width: 0%; } }
+.home_dots {
+  position: relative;
+  display: inline-block;
+  padding: 0.8em 6em 0.8em 3em;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #FEF6E7;
+  transition: all .4s; }
+  .home_dots svg {
+    overflow: hidden;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 22px;
+    transition: all .3s;
+    opacity: 0; }
+  .home_dots img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 19px;
+    transition: all .3s;
+    width: 40px;
+    height: 31px;
+    opacity: 0.4; }
+  .home_dots:hover {
+    background-color: #fff; }
+    .home_dots:hover img {
+      opacity: 0; }
+    .home_dots:hover svg {
+      opacity: 1; }
+  .home_dots .p_right {
+    padding-right: 15px; }
+
+.home_dots:before, .home_dots:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: transparent; }
+
+.home_dots:before {
+  top: 0; }
+
+.home_dots:after {
+  bottom: 0; }
+
+.home_dots:hover > * > *:before, .home_dots:hover > * > *:after {
+  transform: translate3d(0, 0, 0); }
+
+.home_dots:hover > * > * > *:before, .home_dots:hover > * > * > *:after {
+  transform: translate3d(0, 0, 0); }
+
+.home_dots > *:before, .home_dots > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: transparent; }
+
+.home_dots > *:before {
+  left: 0; }
+
+.home_dots > *:after {
+  right: 0; }
+
+.home_dots > * > *:before, .home_dots > * > *:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  height: 2px;
+  width: 100%;
+  background-color: #2C3E50; }
+
+.home_dots > * > *:before {
+  top: 0;
+  transform: translate3d(-105%, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.home_dots > * > *:after {
+  bottom: 0;
+  transform: translate3d(105%, 0, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.home_dots > * > * > *:before, .home_dots > * > * > *:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  height: 100%;
+  width: 2px;
+  background-color: #2C3E50; }
+
+.home_dots > * > * > *:before {
+  left: 0;
+  transform: translate3d(0, 105%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.home_dots > * > * > *:after {
+  right: 0;
+  transform: translate3d(0, -105%, 0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -895,11 +1002,6 @@ body.nav-active .navigation_footer span {
     height: calc(100vh - 45px);
     display: block; }
 
-.Whitesails_main_about_right_fluid {
-  /*display: flex;
-  align-items: center;
-  height: 100%;*/ }
-
 .main_about_swipper {
   height: calc(100vh - 300px);
   overflow: hidden;
@@ -912,5 +1014,54 @@ body.nav-active .navigation_footer span {
   height: calc(100vh - 200px); }
   .home_about_slider .swiper-slide a img {
     height: 100%; }
+
+/*.slick-list{padding:0 100px 0 0;}*/
+/*.slick-slide {
+  margin: 0 20px;
+}*/
+/*.slick-slide {
+    margin: 0 10px;
+}
+ 
+.slick-list {
+    margin: 0 -10px;
+}*/
+.Whitesails_main_about_right_fluid {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 44%;
+  width: 100vw;
+  z-index: 10; }
+  .Whitesails_main_about_right_fluid .slick-slide {
+    padding: 0 1% 0 0; }
+  .Whitesails_main_about_right_fluid .slick-track {
+    /* display: unset;
+     margin-left: unset;
+     margin-right: unset;*/ }
+  .Whitesails_main_about_right_fluid .slick-list {
+    width: 100vw; }
+  .Whitesails_main_about_right_fluid .slick-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.home_about_slider {
+  width: 100%;
+  height: calc(100vh - 250px); }
+  .home_about_slider .slick-list {
+    height: inherit; }
+    .home_about_slider .slick-list .slick-track {
+      height: inherit; }
+      .home_about_slider .slick-list .slick-track figure {
+        height: inherit; }
+
+.right_dot {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 2000; }
 
 /*# sourceMappingURL=main.css.map */

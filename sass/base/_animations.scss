@@ -84,3 +84,132 @@ position: relative;
 		width: 0%;
 	}
 }
+
+
+
+
+ .home_dots {
+	    position: relative;
+    display: inline-block;
+    padding: 0.8em 6em 0.8em 3em;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #FEF6E7;
+    transition: all .4s;
+	 
+	 svg {
+	 	    overflow: hidden;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 22px;
+    transition: all .3s;
+  	opacity: 0;
+	 }
+
+	 img {
+	 	    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 19px;
+    transition: all .3s;
+    width: 40px;
+    height: 31px;
+    opacity: 0.4;
+	 }
+
+	 &:hover {
+	 	background-color:#fff;
+
+	 	img {
+	 		opacity: 0;
+	 	}
+
+	 	svg {
+	 		opacity: 1;
+	 	}
+	 }
+ 	
+
+	 .p_right  {
+	 	padding-right: 15px;
+	 }
+}
+
+
+
+
+
+ .home_dots:before, .home_dots:after {
+	 content: "";
+	 position: absolute;
+	 left: 0;
+	 height: 2px;
+	 width: 100%;
+	 background-color: transparent;
+}
+ .home_dots:before {
+	 top: 0;
+}
+ .home_dots:after {
+	 bottom: 0;
+}
+ .home_dots:hover > * > *:before, .home_dots:hover > * > *:after {
+	 transform: translate3d(0, 0, 0);
+}
+ .home_dots:hover > * > * > *:before, .home_dots:hover > * > * > *:after {
+	 transform: translate3d(0, 0, 0);
+}
+ .home_dots > *:before, .home_dots > *:after {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 height: 100%;
+	 width: 2px;
+	 background-color: transparent;
+}
+ .home_dots > *:before {
+	 left: 0;
+}
+ .home_dots > *:after {
+	 right: 0;
+}
+ .home_dots > * > *:before, .home_dots > * > *:after {
+	 content: "";
+	 position: absolute;
+	 left: 0;
+	 z-index: 9;
+	 height: 2px;
+	 width: 100%;
+	 background-color: #2C3E50;
+}
+ .home_dots > * > *:before {
+	 top: 0;
+	 transform: translate3d(-105%, 0, 0);
+	 transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+ .home_dots > * > *:after {
+	 bottom: 0;
+	 transform: translate3d(105%, 0, 0);
+	 transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+ .home_dots > * > * > *:before, .home_dots > * > * > *:after {
+	 content: "";
+	 position: absolute;
+	 top: 0;
+	 z-index: 9;
+	 height: 100%;
+	 width: 2px;
+	 background-color: #2C3E50;
+}
+ .home_dots > * > * > *:before {
+	 left: 0;
+	 transform: translate3d(0, 105%, 0);
+	 transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+ .home_dots > * > * > *:after {
+	 right: 0;
+	 transform: translate3d(0, -105%, 0);
+	 transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
