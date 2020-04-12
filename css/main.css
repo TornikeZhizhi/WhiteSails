@@ -841,6 +841,9 @@ body.nav-active .navigation_footer span {
   .main_link_box_fluid:hover img {
     transform: translate(2px, -50%); }
 
+.home_about_slider {
+  display: block; }
+
 .cd_section_1_fluid {
   display: flex;
   height: 100%; }
@@ -863,7 +866,8 @@ body.nav-active .navigation_footer span {
   .cd_section_1_fluid .cd_section_1_title h2, .cd_section_1_fluid .cd_section_1_title a {
     font-size: 80px;
     font-family: "Conv_bpg_algeti", sans-serif;
-    color: #2C3E50; }
+    color: #2C3E50;
+    white-space: nowrap; }
     .cd_section_1_fluid .cd_section_1_title h2:lang(en), .cd_section_1_fluid .cd_section_1_title a:lang(en) {
       font-family: "Noto Serif", sans-serif; }
     .cd_section_1_fluid .cd_section_1_title h2:lang(ka), .cd_section_1_fluid .cd_section_1_title a:lang(ka) {
@@ -890,5 +894,23 @@ body.nav-active .navigation_footer span {
     width: auto;
     height: calc(100vh - 45px);
     display: block; }
+
+.Whitesails_main_about_right_fluid {
+  /*display: flex;
+  align-items: center;
+  height: 100%;*/ }
+
+.main_about_swipper {
+  height: calc(100vh - 300px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.home_about_slider .swiper-slide a {
+  display: block;
+  height: calc(100vh - 200px); }
+  .home_about_slider .swiper-slide a img {
+    height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

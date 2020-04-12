@@ -92,7 +92,20 @@ var swiperOptions = {
 
 var swiper = new Swiper(".swiper-container.header_swiper", swiperOptions);
 	
-
+var swiper = new Swiper('.swiper-container.main_about_swipper', {
+      // slidesPerView: 'auto',
+      
+      loop: true,
+  speed: 1000,
+  grabCursor: true,
+  watchSlidesProgress: true,
+  mousewheelControl: true,
+  keyboardControl: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+    });
 
 //Home Mina Swipper
 
