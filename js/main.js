@@ -101,8 +101,8 @@ $('.home_about_slider').slick({
   speed:1000,
 
   autoplaySpeed: 3000,
-  prevArrow: $(".arrow_left"),
-    nextArrow: $(".arrow_right")
+  prevArrow: $(".home_about_trigger_left"),
+    nextArrow: $(".home_about_trigger_right")
 
 });
 

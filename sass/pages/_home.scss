@@ -181,7 +181,7 @@ display: flex;
     width: 100vw;
     z-index: 10;
     .slick-slide{
-	padding:0 1% 0 0;
+	padding:0 0.5% 0 0;
 }
 .slick-track{
 
@@ -230,4 +230,41 @@ display: flex;
 	bottom: 30px;
 	right: 30px;
 	z-index: 2000;
+}
+
+/*cursor: url(../../svg/zoom.cur), auto*/
+
+.Whitesails_main_about_right_fluid .slick-slide img:hover{
+	cursor: url(../images/slider_arrow.png), auto;
+}
+.cd-vertical-nav {
+	display: none;
+}
+.home_about_trigger_left {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 33%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 22;
+
+    &:hover{
+    	cursor: url(../images/slider_left.png) 10 10, auto;
+    }
+}
+
+.home_about_trigger_right {
+	position: absolute;
+    top: 0;
+    left: 33%;
+    width: 33%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 22;
+
+     &:hover{
+    	cursor: url(../images/slider_right.png) 45 12, auto;
+    }
+
 }
