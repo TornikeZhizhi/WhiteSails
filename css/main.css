@@ -668,7 +668,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2000;
   background-color: #fff; }
   #header .logo {
     position: absolute;
@@ -901,11 +901,11 @@ body.nav-active .navigation_footer span {
   position: relative;
   display: block; }
   .main_btn:lang(en) {
-    font-family: "Noto Serif", sans-serif; }
+    font-family: "Noto Sans", sans-serif; }
   .main_btn:lang(ka) {
-    font-family: "Noto Serif", sans-serif; }
+    font-family: "Noto Sans", sans-serif; }
   .main_btn:lang(ru) {
-    font-family: "Noto Serif", sans-serif; }
+    font-family: "Noto Sans", sans-serif; }
   .main_btn:after {
     content: "";
     background-color: #FFD393;
@@ -1115,6 +1115,25 @@ body.nav-active .navigation_footer span {
 .home_dots .left_dot_arrow {
   left: 22px; }
 
+.home_dots {
+  font-family: "Conv_bpg_algeti", sans-serif;
+  font-size: 12px;
+  color: #2C3E50; }
+  .home_dots:lang(en) {
+    font-family: "Noto Sans", sans-serif; }
+  .home_dots:lang(ka) {
+    font-family: "Noto Sans", sans-serif; }
+  .home_dots:lang(ru) {
+    font-family: "Noto Sans", sans-serif; }
+  .home_dots * {
+    font-family: "Conv_bpg_algeti", sans-serif; }
+    .home_dots *:lang(en) {
+      font-family: "Noto Sans", sans-serif; }
+    .home_dots *:lang(ka) {
+      font-family: "Noto Sans", sans-serif; }
+    .home_dots *:lang(ru) {
+      font-family: "Noto Sans", sans-serif; }
+
 .left_dot_hover {
   left: 22px;
   height: 19px !important;
@@ -1193,17 +1212,20 @@ body.nav-active .navigation_footer span {
 .cd-section-infrastruqture .swiper-scrollbar-drag {
   border-radius: 0;
   background-color: #73CABE; }
+.cd-section-infrastruqture .inf_pagiation_fluid {
+  display: flex;
+  justify-content: center; }
 .cd-section-infrastruqture .swiper-pagination {
-  width: 200px !important;
   left: 50% !important;
   transform: translateX(-50%);
   display: flex;
   bottom: 2px !important;
   /*opacity: 0 !important;*/
   z-index: 2222;
-  background-color: #DCDCDC; }
+  background-color: #DCDCDC;
+  width: unset; }
 .cd-section-infrastruqture .swiper-pagination-bullet {
-  width: calc(100% / 3);
+  width: 60px;
   height: 7px;
   border-radius: 0%;
   display: unset;
@@ -1237,5 +1259,56 @@ body.nav-active .navigation_footer span {
       font-family: "Noto Sans", sans-serif; }
     .infrastruqture_text .inf_text *:lang(ru) {
       font-family: "Noto Sans", sans-serif; }
+
+.fixed_navigation {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000; }
+  .fixed_navigation ul {
+    display: flex;
+    flex-direction: column; }
+    .fixed_navigation ul li {
+      transition: all .4s; }
+      .fixed_navigation ul li:hover {
+        transform: translateX(7px); }
+        .fixed_navigation ul li:hover a {
+          background-color: #f8f1e6 !important; }
+      .fixed_navigation ul li a {
+        border: 1px solid #F1F3F7;
+        width: 70px;
+        flex: 0 0 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        transition: all .4s; }
+        .fixed_navigation ul li a img, .fixed_navigation ul li a svg {
+          height: 26px;
+          object-fit: contain;
+          width: 30px; }
+        .fixed_navigation ul li a:last-child span {
+          background-color: #F47E5E;
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative; }
+          .fixed_navigation ul li a:last-child span:after {
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+            border-radius: 50%;
+            border: 1px solid #F2F2F2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "";
+            z-index: 1; }
 
 /*# sourceMappingURL=main.css.map */
