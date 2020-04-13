@@ -49,7 +49,7 @@ $(document).ready(function() {
 
 
 //Header Swipper
-var interleaveOffset = 1.5;
+var interleaveOffset = 0.5;
 
 var swiperOptions = {
   loop: true,
@@ -116,8 +116,8 @@ $(".left_dot").click(function(){
 })
 
 
-//3 section
-var interleaveOffset2 = 0.5;
+// 3 section
+var interleaveOffset2 = 0.8;
 
 var swiperOptions2 = {
   loop: true,
@@ -126,6 +126,14 @@ var swiperOptions2 = {
   watchSlidesProgress: true,
   mousewheelControl: true,
   keyboardControl: true,
+       pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+   // scrollbar: {
+   //      el: '.swiper-scrollbar',
+   //      hide: true,
+   //    },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
@@ -135,7 +143,7 @@ var swiperOptions2 = {
       var swiper = this;
       for (var i = 0; i < swiper.slides.length; i++) {
         var slideProgress = swiper.slides[i].progress;
-        var innerOffset = swiper.width * interleaveOffset;
+        var innerOffset = swiper.width * interleaveOffset2;
         var innerTranslate = slideProgress * innerOffset;
         swiper.slides[i].querySelector(".slide-inner").style.transform =
           "translate3d(" + innerTranslate + "px, 0, 0)";
@@ -164,7 +172,18 @@ var swiperOptions2 = {
 
 
 
+ // var swiper = new Swiper('.swiper-container.infrastruqture_slider', {
 
+ // 	effect: 'fade',
+ //      scrollbar: {
+ //        el: '.swiper-scrollbar',
+ //        hide: true,
+ //      },
+ //      pagination: {
+ //        el: '.swiper-pagination',
+ //        clickable: true,
+ //      },
+ //    });
 
 
 

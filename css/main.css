@@ -1141,24 +1141,101 @@ body.nav-active .navigation_footer span {
   padding: 100px 130px 100px 200px; }
 
 .infrastruqture_slider {
-  margin-top: 80px;
-  height: calc(100vh - 300px); }
+  margin-top: 60px;
+  height: calc(100vh - 185px);
+  padding-bottom: 55px; }
   .infrastruqture_slider .slide-inner {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around;
+    width: 100%; }
+    .infrastruqture_slider .slide-inner .infrastucture_slider_img:nth-child(odd) {
+      display: flex;
+      align-items: flex-end; }
   .infrastruqture_slider .swiper-slide {
     display: flex;
     justify-content: space-between; }
     .infrastruqture_slider .swiper-slide .infrastucture_slider_img {
-      width: 30%;
-      max-width: 30%; }
+      width: 28%;
+      max-width: 28%; }
       .infrastruqture_slider .swiper-slide .infrastucture_slider_img a {
         display: block;
         width: 100%;
-        height: 100%; }
+        height: 60%;
+        position: relative;
+        padding-left: 30px;
+        background: #f4fafa; }
+        .infrastruqture_slider .swiper-slide .infrastucture_slider_img a .infrastuqture_slider_title {
+          position: absolute;
+          font-family: "Conv_bpg_algeti", sans-serif;
+          font-size: 24px;
+          color: #1E1E1E;
+          bottom: 20px;
+          left: 3px;
+          z-index: 1; }
+          .infrastruqture_slider .swiper-slide .infrastucture_slider_img a .infrastuqture_slider_title:lang(en) {
+            font-family: "Noto Serif", sans-serif; }
+          .infrastruqture_slider .swiper-slide .infrastucture_slider_img a .infrastuqture_slider_title:lang(ka) {
+            font-family: "Noto Serif", sans-serif; }
+          .infrastruqture_slider .swiper-slide .infrastucture_slider_img a .infrastuqture_slider_title:lang(ru) {
+            font-family: "Noto Serif", sans-serif; }
         .infrastruqture_slider .swiper-slide .infrastucture_slider_img a img {
           width: 100%;
           height: 100%;
           object-fit: cover; }
+
+.cd-section-infrastruqture .swiper-container-horizontal > .swiper-scrollbar {
+  opacity: 1 !important;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0; }
+.cd-section-infrastruqture .swiper-scrollbar-drag {
+  border-radius: 0;
+  background-color: #73CABE; }
+.cd-section-infrastruqture .swiper-pagination {
+  width: 200px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  display: flex;
+  bottom: 2px !important;
+  /*opacity: 0 !important;*/
+  z-index: 2222;
+  background-color: #DCDCDC; }
+.cd-section-infrastruqture .swiper-pagination-bullet {
+  width: calc(100% / 3);
+  height: 7px;
+  border-radius: 0%;
+  display: unset;
+  margin: 0 !important;
+  background: #73CABE;
+  transition: all .2s; }
+
+.infrastruqture_text {
+  position: absolute;
+  top: calc(78px + 0%);
+  left: 6%;
+  z-index: 1000;
+  max-width: 460px; }
+  .infrastruqture_text h3 {
+    font-family: "Conv_bpg_algeti", sans-serif;
+    font-size: 70px;
+    color: #2C3E50; }
+    .infrastruqture_text h3:lang(en) {
+      font-family: "Noto Serif", sans-serif; }
+    .infrastruqture_text h3:lang(ka) {
+      font-family: "Noto Serif", sans-serif; }
+    .infrastruqture_text h3:lang(ru) {
+      font-family: "Noto Serif", sans-serif; }
+  .infrastruqture_text .inf_text * {
+    font-family: "Conv_bpg_algeti", sans-serif;
+    font-size: 16px;
+    color: #2C3E50; }
+    .infrastruqture_text .inf_text *:lang(en) {
+      font-family: "Noto Sans", sans-serif; }
+    .infrastruqture_text .inf_text *:lang(ka) {
+      font-family: "Noto Sans", sans-serif; }
+    .infrastruqture_text .inf_text *:lang(ru) {
+      font-family: "Noto Sans", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
