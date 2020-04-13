@@ -103,26 +103,30 @@ position: relative;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 22px;
+    right: 18px;
     transition: all .3s;
   	opacity: 0;
 	 }
 
-	 img {
-	 	    position: absolute;
+	 .right_dot_arrow,.left_dot_arrow,.left_dot_hover {
+	    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 19px;
     transition: all .3s;
-    width: 40px;
-    height: 31px;
+    width: 29px;
+    height: 2px;
     opacity: 0.4;
+	 }
+
+	 .left_dot_arrow {
+
 	 }
 
 	 &:hover {
 	 	background-color:#fff;
 
-	 	img {
+	 	.right_dot_arrow {
 	 		opacity: 0;
 	 	}
 
