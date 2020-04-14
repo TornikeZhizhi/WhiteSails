@@ -38,14 +38,15 @@ $(document).ready(function() {
 		$(".language_dropdown li").slideUp(50);
 		$(".active_language").removeClass("active");
 	})
-
+document.getElementsByClassName('active_language')[0].addEventListener("click",function(event){
+	event.preventDefault()
+})
 	$(".active_language").on("click",function(e){
 		e.stopPropagation()
-		e.preventDefault()
 		$(".language_dropdown li").slideDown(200);
 		$(this).addClass("active")
 	})
-	//
+	
 
 
 //Header Swipper
@@ -185,11 +186,96 @@ var swiperOptions2 = {
  //      },
  //    });
 
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  Infinite:true,
+  prevArrow: $(".home_advantege_left_arrow"),
+    nextArrow: $(".home_advantege_right_arrow, .slider_next_title, .slider_next_img")
+});
 
 
 
+	var Sliderlength = $(".home_advantage_left .slider_for_box").not(".slick-cloned").length
+
+	var current1 = 0;
+	var current2 = 0;
+	var activeSource = Number($(".home_advantage_left .slider-for .slider_for_box.slick-active").not(".slick-cloned").attr("data-slick-index"))
+
+	if (activeSource == 0) {
+
+		current2 = 1
+		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_img1").attr("src",img1)
+			$(".slider_img2").attr("src",img2)
+
+	}
+	else if(activeSource == Sliderlength - 1) {
+
+		current2 = 0
+		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_img1").attr("src",img1)
+			$(".slider_img2").attr("src",img2)
+	}
+
+	else {
+
+		current2 = activeSource + 1
+		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_img1").attr("src",img1)
+			$(".slider_img2").attr("src",img2)
+
+	}
 
 
 
+$(".slider-for").on('afterChange', function(event, slick, currentSlide) {
+var activeSource = Number($(".home_advantage_left .slider-for .slider_for_box.slick-active").not(".slick-cloned").attr("data-slick-index"))
+
+	if (activeSource == 0) {
+		current2 = 1
+
+		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_img1").attr("src",img1)
+			$(".slider_img2").attr("src",img2)
+	}
+	else if(activeSource == Sliderlength - 1) {
+
+		current2 = 0
+		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_img1").attr("src",img1)
+			$(".slider_img2").attr("src",img2)
+	}
+	else {
+		current2 = activeSource + 1
+		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_img1").attr("src",img1)
+			$(".slider_img2").attr("src",img2)
+	}
+
+})
+
+
+$(".home_advantege_right_arrow, .home_advantege_left_arrow, .slider_next_title, .slider_next_img ").click(function(){
+	$(".slider_next_img").addClass("active");
+	$(".home_advantege_right_arrow, .slider_next_title, .home_advantege_left_arrow, .slider_next_img ").addClass("but_disable");
+	
+
+	setTimeout(function(){
+		$(".slider_next_img").removeClass("active");
+		$(".home_advantege_right_arrow, .home_advantege_left_arrow, .slider_next_title, .slider_next_img ").removeClass("but_disable");
+		// $(".home_advantege_right_arrow").removeClass("but_disable");
+	},1200)
+
+
+})
 
 })
