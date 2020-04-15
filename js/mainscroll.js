@@ -9,9 +9,9 @@ jQuery(document).ready(function($){
     
     //DOM elements
     var sectionsAvailable = $('.cd-section'),
-    	verticalNav = $('.cd-vertical-nav'),
-    	prevArrow = verticalNav.find('a.cd-prev'),
-    	nextArrow = verticalNav.find('a.cd-next');
+    	verticalNav = $('.home_dots'),
+    	prevArrow = $('.home_dots.left_dot'),
+    	nextArrow = $('.home_dots.right_dot')
 
 	
 	//check the media query and bind corresponding events

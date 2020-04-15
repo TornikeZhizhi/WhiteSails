@@ -1275,8 +1275,6 @@ body.nav-active .navigation_footer span {
       transition: all .4s; }
       .fixed_navigation ul li:hover {
         transform: translateX(7px); }
-        .fixed_navigation ul li:hover a {
-          background-color: #f8f1e6 !important; }
       .fixed_navigation ul li a {
         border: 1px solid #F1F3F7;
         width: 70px;
@@ -1453,5 +1451,41 @@ body.nav-active .navigation_footer span {
 
 .but_disable {
   pointer-events: none; }
+
+.home_aparment_fluid {
+  display: flex; }
+  .home_aparment_fluid > div {
+    flex: 0 0 50%;
+    max-width: 50%; }
+  .home_aparment_fluid > div:first-child {
+    height: 100%;
+    padding: 1% 0% 1% 6%;
+    position: relative;
+    z-index: 10;
+    background-color: #F4FAFA; }
+    .home_aparment_fluid > div:first-child .cd_section_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-bottom: 11%;
+      height: 100%;
+      transform: translateX(6%); }
+      .home_aparment_fluid > div:first-child .cd_section_left .cd_section_1_title:after, .home_aparment_fluid > div:first-child .cd_section_left .cd_section_1_text:after {
+        content: unset !important; }
+    .home_aparment_fluid > div:first-child h2 {
+      line-height: 68px;
+      margin-bottom: 21px; }
+    .home_aparment_fluid > div:first-child a {
+      white-space: normal; }
+
+.home_apartment_right_fluid {
+  height: 100%; }
+  .home_apartment_right_fluid .home_aparments_svg {
+    height: 100%; }
+    .home_apartment_right_fluid .home_aparments_svg img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
 
 /*# sourceMappingURL=main.css.map */
