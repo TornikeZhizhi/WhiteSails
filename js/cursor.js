@@ -37,9 +37,11 @@ var cursor = {
         var self = this;
         
         if (self.cursorEnlarged) {
+            // document.getElementsByClassName("cursor-dot-outline")[0].classList.add("link");
             self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.2)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.1)';
         } else {
+             // document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("link");
             self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
             self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
         }
@@ -48,7 +50,16 @@ var cursor = {
     setupEventListeners: function() {
         var self = this;
 
-
+           document.querySelectorAll('a').forEach(function(el) {
+            el.addEventListener('mouseover', function() {
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
       
         const elements = document.querySelectorAll('.common_trigger_left');
       

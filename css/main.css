@@ -953,6 +953,10 @@ body.nav-active .navigation_footer span {
       object-fit: cover;
       width: 100%; }
 
+.line_middle {
+  zoom: 0.9;
+  width: 34px; }
+
 .main_btn {
   color: #1E1E1E;
   font-family: "Conv_bpg_algeti", sans-serif;
