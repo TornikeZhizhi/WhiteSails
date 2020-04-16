@@ -252,7 +252,7 @@ position: relative;
   justify-content: center;
 
 
-  	img {
+  	.slider_cursor {
 
   		height: 80%;
   		width: 80%;
@@ -263,13 +263,36 @@ position: relative;
   		display: none;
 
   	}
+  	.drag_hover {
+  			height: 100%;
+  		width: 100%;
+  		object-fit: contain;
+  		opacity: 0;
+  		visibility: hidden;
+  		transition: all .4s;
+  		display: none;
+  	}
 
- 
+ 	&.hide_for_drag {
+ 		border-color: transparent;
+
+ 		.drag_hover {
+  			opacity: 1;
+  			visibility: visible;
+  			display: block;
+  		}
+
+
+
+  			& ~ .cursor-dot {
+  				display: none;
+  			}
+ 	}
 
   	&.hide {
   		border-color: transparent;
 
-  		img {
+  		.slider_cursor {
   			opacity: 1;
   			visibility: visible;
   			display: block;
@@ -285,7 +308,7 @@ position: relative;
   	&.hide_rotate {
   		border-color: transparent;
 
-  		img {
+  		.slider_cursor {
   			opacity: 1;
   			visibility: visible;
   			display: block;

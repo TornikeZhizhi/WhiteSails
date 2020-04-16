@@ -60,6 +60,22 @@ var cursor = {
                 self.toggleCursorSize();
             });
         });
+
+        const elements3 = document.querySelectorAll('.draggable');
+      
+        Array.from(elements3).forEach(function(el) {
+        
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide_for_drag");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide_for_drag");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        })
       
         const elements = document.querySelectorAll('.common_trigger_left');
       
