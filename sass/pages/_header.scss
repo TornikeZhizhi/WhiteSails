@@ -369,6 +369,7 @@ transition: all .5s .7s;
 	 		    letter-spacing: 0.5px;
 	 		        padding: 8px 12px;
 	 		        transition: all .1s;
+	 		        display:block;
 
 	 		        &.active {
 	 		        	background-color: #74C9BE;
@@ -547,8 +548,3 @@ transition: all .5s .7s;
 	}
 }
 
-.line_middle {
-	
-	zoom: 0.9;
-    width: 34px;
-}

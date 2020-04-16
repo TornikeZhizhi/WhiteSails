@@ -278,7 +278,11 @@ $(".home_advantege_right_arrow, .home_advantege_left_arrow, .slider_next_title, 
 
 })
 function listener (event) {
-  console.log(event.type, event.pageX, event.pageY)
+
+	$(".draggable").removeClass("drag_middle")
+	$(".draggable").removeClass("drag_left")
+	$(".draggable").removeClass("drag_right")
+	
 }
 
 

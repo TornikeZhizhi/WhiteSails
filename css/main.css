@@ -799,7 +799,8 @@ body.nav-active .nav__list-item:nth-child(10) {
     font-size: 14px;
     letter-spacing: 0.5px;
     padding: 8px 12px;
-    transition: all .1s; }
+    transition: all .1s;
+    display: block; }
     .header_languages a:lang(en) {
       font-family: "Conv_bpg_algeti", sans-serif; }
     .header_languages a:lang(ka) {
@@ -952,10 +953,6 @@ body.nav-active .navigation_footer span {
       height: 100%;
       object-fit: cover;
       width: 100%; }
-
-.line_middle {
-  zoom: 0.9;
-  width: 34px; }
 
 .main_btn {
   color: #1E1E1E;
