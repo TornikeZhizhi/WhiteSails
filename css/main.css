@@ -411,7 +411,34 @@ body {
   height: 50px;
   border: 1.5px solid #615F61;
   border-radius: 50%;
-  /*background-color: rgba(229, 128, 128, 0.5);*/ }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .cursor-dot-outline img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    display: none; }
+  .cursor-dot-outline.hide {
+    border-color: transparent; }
+    .cursor-dot-outline.hide img {
+      opacity: 1;
+      visibility: visible;
+      display: block; }
+    .cursor-dot-outline.hide ~ .cursor-dot {
+      display: none; }
+  .cursor-dot-outline.hide_rotate {
+    border-color: transparent; }
+    .cursor-dot-outline.hide_rotate img {
+      opacity: 1;
+      visibility: visible;
+      display: block;
+      transform: rotate(180deg); }
+    .cursor-dot-outline.hide_rotate ~ .cursor-dot {
+      display: none; }
 
 *,
 html,

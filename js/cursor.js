@@ -33,17 +33,50 @@ var cursor = {
 //         self.$dot.style.top = self.endY + 'px';
 //         self.$dot.style.left = self.endX + 'px';
 //     },
+  toggleCursorSize: function() {
+        var self = this;
+        
+        if (self.cursorEnlarged) {
+            self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.2)';
+        } else {
+            self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
+            self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
+        }
+    },
     
     setupEventListeners: function() {
         var self = this;
+
+
+      
+        const elements = document.querySelectorAll('.common_trigger_left');
+      
+        Array.from(elements).forEach(function(el) {
         
-        // Anchor hovering
-        document.querySelectorAll('a').forEach(function(el) {
             el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide");
                 self.cursorEnlarged = true;
                 self.toggleCursorSize();
             });
             el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+
+        const elements2 = document.querySelectorAll('.common_trigger_right');
+      
+        Array.from(elements2).forEach(function(el) {
+           
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide_rotate");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide_rotate");
                 self.cursorEnlarged = false;
                 self.toggleCursorSize();
             });
@@ -99,17 +132,7 @@ var cursor = {
         requestAnimationFrame(this.animateDotOutline.bind(self));
     },
     
-    // toggleCursorSize: function() {
-    //     var self = this;
-        
-    //     if (self.cursorEnlarged) {
-    //         self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-    //         self.$outline.style.transform = 'translate(-50%, -50%) scale(1.2)';
-    //     } else {
-    //         self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-    //         self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-    //     }
-    // },
+  
     
     toggleCursorVisibility: function() {
         var self = this;
