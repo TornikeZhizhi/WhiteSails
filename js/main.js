@@ -191,6 +191,7 @@ var swiperOptions2 = {
   slidesToScroll: 1,
   arrows: true,
   fade: true,
+  draggable:false,
   Infinite:true,
   prevArrow: $(".home_advantege_left_arrow"),
     nextArrow: $(".home_advantege_right_arrow, .slider_next_title, .slider_next_img")
@@ -207,8 +208,10 @@ var swiperOptions2 = {
 	if (activeSource == 0) {
 
 		current2 = 1
+		var text1 =$(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".cd_section_1_title").text()
 		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
 		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_next_title h3").text(text1)
 			$(".slider_img1").attr("src",img1)
 			$(".slider_img2").attr("src",img2)
 
@@ -239,24 +242,29 @@ var activeSource = Number($(".home_advantage_left .slider-for .slider_for_box.sl
 
 	if (activeSource == 0) {
 		current2 = 1
-
+		var text1 =$(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".cd_section_1_title a").text()
 		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
 		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_next_title h3").text(text1)
 			$(".slider_img1").attr("src",img1)
 			$(".slider_img2").attr("src",img2)
 	}
 	else if(activeSource == Sliderlength - 1) {
 
 		current2 = 0
+			var text1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".cd_section_1_title a").text()
 		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
 		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_next_title h3").text(text1)
 			$(".slider_img1").attr("src",img1)
 			$(".slider_img2").attr("src",img2)
 	}
 	else {
 		current2 = activeSource + 1
+			var text1 =$(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".cd_section_1_title a").text()
 		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
 		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+			$(".slider_next_title h3").text(text1)
 			$(".slider_img1").attr("src",img1)
 			$(".slider_img2").attr("src",img2)
 	}
