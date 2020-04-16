@@ -277,8 +277,14 @@ $(".home_advantege_right_arrow, .home_advantege_left_arrow, .slider_next_title, 
 
 
 })
+function listener (event) {
+  console.log(event.type, event.pageX, event.pageY)
+}
 
 
+interact(".draggable").on('dragstart', listener)
+ 
+  // })
 // target elements with the "draggable" class
 interact('.draggable')
   .draggable({
@@ -315,6 +321,10 @@ interact('.draggable')
   })
 
 function dragMoveListener (event) {
+
+	document.getElementsByClassName("draggable")[0].classList.remove("drag_middle")
+	document.getElementsByClassName("draggable")[0].classList.remove("drag_right")
+	document.getElementsByClassName("draggable")[0].classList.remove("drag_left")
   var target = event.target
   // keep the dragged position in the data-x/data-y attributes
   var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
@@ -323,7 +333,7 @@ function dragMoveListener (event) {
   // translate the element
   target.style.webkitTransform =
     target.style.transform =
-      'translate(' + x + 'px, ' + y + 'px)'
+      'translate(' + x + 'px)'
 
   // update the posiion attributes
   target.setAttribute('data-x', x)
@@ -332,5 +342,42 @@ function dragMoveListener (event) {
 
 // this function is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener
+
+
+
+$(".aparment_tab_l").click(function(){
+
+	$(".draggable").removeClass("drag_middle")
+	$(".draggable").removeClass("drag_right")
+	$(".draggable").addClass("drag_left")
+	$(".draggable").attr("data-x","0")
+
+
+})
+
+$(".aparment_tab_m").click(function(){
+
+	$(".draggable").removeClass("drag_left")
+	$(".draggable").removeClass("drag_right")
+	$(".draggable").addClass("drag_middle")
+		$(".draggable").attr("data-x","-300")
+})
+
+$(".aparment_tab_r").click(function(){
+
+	$(".draggable").removeClass("drag_left")
+	$(".draggable").removeClass("drag_middle")
+	$(".draggable").addClass("drag_right")
+	$(".draggable").attr("data-x","-580")
+
+})
+$(".aparment_tab").click(function(){
+
+	$(".aparment_tab").removeClass("active")
+	$(this).addClass("active")
+
+	$(".home_apartment_right_fluid .st_common").removeClass("active")
+	$(".home_apartment_right_fluid").find($(this).attr("data-id")).addClass("active");
+})
 
 })

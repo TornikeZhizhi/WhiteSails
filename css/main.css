@@ -1567,7 +1567,11 @@ body.nav-active .navigation_footer span {
   overflow: hidden;
   padding-top: 50px; }
   .home_apartment_right_fluid .st0, .home_apartment_right_fluid .st1, .home_apartment_right_fluid .st2, .home_apartment_right_fluid .st3, .home_apartment_right_fluid .st4 {
-    fill: transparent; }
+    transition: all .4s; }
+    .home_apartment_right_fluid .st0.active, .home_apartment_right_fluid .st1.active, .home_apartment_right_fluid .st2.active, .home_apartment_right_fluid .st3.active, .home_apartment_right_fluid .st4.active {
+      fill: #73CABE; }
+    .home_apartment_right_fluid .st0:hover, .home_apartment_right_fluid .st1:hover, .home_apartment_right_fluid .st2:hover, .home_apartment_right_fluid .st3:hover, .home_apartment_right_fluid .st4:hover {
+      fill: #73CABE; }
 
 #draggable {
   height: 100%;
@@ -1575,6 +1579,7 @@ body.nav-active .navigation_footer span {
 
 .draggable {
   height: 100%;
+  /*transition: all .4s;*/
   /* width: 100vw;*/ }
 
 .common_aparment_tab_fluid {
@@ -1618,5 +1623,23 @@ body.nav-active .navigation_footer span {
         font-family: "Noto Serif", sans-serif; }
       .common_aparment_tab_fluid .common_aparment_tab ul li:not(:last-child) {
         border-right: 1px solid #F1F3F7; }
+
+.drag_right {
+  transition: all .4s;
+  transform: translate(-40%) !important; }
+
+.drag_middle {
+  transition: all .4s;
+  transform: translate(-20%) !important; }
+
+.drag_left {
+  transition: all .4s;
+  transform: translate(0%) !important; }
+
+.aparment_tab {
+  transition: all .4s; }
+  .aparment_tab.active {
+    background-color: #FFF9EF;
+    color: #F47D5D !important; }
 
 /*# sourceMappingURL=main.css.map */

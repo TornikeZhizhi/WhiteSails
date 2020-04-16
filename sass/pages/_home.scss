@@ -845,7 +845,14 @@ display: flex;
 
 
 	.st0,.st1,.st2,.st3,.st4 {
-		fill: transparent;
+		transition: all .4s;
+		&.active {
+			fill:#73CABE;
+			}	
+		&:hover{
+			fill:#73CABE;
+
+		}
 	}
 }
 #draggable {
@@ -854,6 +861,7 @@ display: flex;
 }
 .draggable {
 	    height: 100%;
+	    /*transition: all .4s;*/
    /* width: 100vw;*/
 }
 
@@ -901,4 +909,29 @@ display: flex;
 		}
 	}
 
+}
+
+
+.drag_right {
+	transition: all .4s;
+	transform: translate(-40%) !important;
+}
+
+.drag_middle {
+	transition: all .4s;
+	transform: translate(-20%) !important;
+}
+
+.drag_left {
+	transition: all .4s;
+	transform: translate(-0%) !important;
+}
+
+
+.aparment_tab {
+	transition: all .4s;
+	&.active {
+		background-color: #FFF9EF;
+		color: #F47D5D !important;
+	}
 }
