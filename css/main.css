@@ -1546,12 +1546,77 @@ body.nav-active .navigation_footer span {
       white-space: normal; }
 
 .home_apartment_right_fluid {
-  height: 100%; }
+  height: 100%;
+  position: absolute; }
   .home_apartment_right_fluid .home_aparments_svg {
     height: 100%; }
     .home_apartment_right_fluid .home_aparments_svg img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+
+.home_svg_build {
+  overflow: hidden;
+  height: 100%; }
+  .home_svg_build svg {
+    height: 100%; }
+
+.home_apartment_right_fluid {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 50px; }
+  .home_apartment_right_fluid .st0, .home_apartment_right_fluid .st1, .home_apartment_right_fluid .st2, .home_apartment_right_fluid .st3, .home_apartment_right_fluid .st4 {
+    fill: transparent; }
+
+#draggable {
+  height: 100%;
+  width: 61vw; }
+
+.draggable {
+  height: 100%;
+  /* width: 100vw;*/ }
+
+.common_aparment_tab_fluid {
+  position: absolute;
+  bottom: 103px;
+  left: 30px;
+  z-index: 100;
+  background-color: #fff;
+  border: 1px solid #F1F3F7; }
+  .common_aparment_tab_fluid .common_aparment_title {
+    padding: 7px 15px;
+    border-bottom: 1px solid #F1F3F7; }
+    .common_aparment_tab_fluid .common_aparment_title span {
+      font-family: "Conv_Segoe UI", sans-serif;
+      color: #1E1E1E;
+      font-size: 14px; }
+      .common_aparment_tab_fluid .common_aparment_title span:lang(en) {
+        font-family: "Conv_Segoe UI", sans-serif; }
+      .common_aparment_tab_fluid .common_aparment_title span:lang(ka) {
+        font-family: "Conv_Segoe UI", sans-serif; }
+      .common_aparment_tab_fluid .common_aparment_title span:lang(ru) {
+        font-family: "Conv_Segoe UI", sans-serif; }
+  .common_aparment_tab_fluid .common_aparment_tab ul {
+    margin: 0;
+    display: flex; }
+    .common_aparment_tab_fluid .common_aparment_tab ul li {
+      font-family: "Conv_bpg_algeti", sans-serif;
+      color: #1E1E1E;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      flex: 0 0 45px; }
+      .common_aparment_tab_fluid .common_aparment_tab ul li:lang(en) {
+        font-family: "Noto Serif", sans-serif; }
+      .common_aparment_tab_fluid .common_aparment_tab ul li:lang(ka) {
+        font-family: "Noto Serif", sans-serif; }
+      .common_aparment_tab_fluid .common_aparment_tab ul li:lang(ru) {
+        font-family: "Noto Serif", sans-serif; }
+      .common_aparment_tab_fluid .common_aparment_tab ul li:not(:last-child) {
+        border-right: 1px solid #F1F3F7; }
 
 /*# sourceMappingURL=main.css.map */

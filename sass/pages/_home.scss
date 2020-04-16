@@ -810,6 +810,7 @@ display: flex;
 
 .home_apartment_right_fluid {
 	height: 100%;
+	position: absolute;
 
 	.home_aparments_svg {
 		height: 100%;
@@ -825,4 +826,79 @@ display: flex;
 
 
 
+.home_svg_build {
+	
+	overflow: hidden;
+	height: 100%;
 
+	svg {
+		height: 100%;
+	}
+
+}
+.home_apartment_right_fluid {
+	width: 100%;
+	height: 100%; 
+	overflow: hidden;
+	padding-top: 50px;
+
+
+
+	.st0,.st1,.st2,.st3,.st4 {
+		fill: transparent;
+	}
+}
+#draggable {
+	    height: 100%;
+    width: 61vw;
+}
+.draggable {
+	    height: 100%;
+   /* width: 100vw;*/
+}
+
+.common_aparment_tab_fluid {
+	position: absolute;
+	bottom: 103px;
+	left: 30px;
+	z-index: 100;
+	background-color: #fff;
+	border: 1px solid #F1F3F7;
+
+	.common_aparment_title {
+		padding: 7px 15px;
+		border-bottom: 1px solid #F1F3F7;
+		span {
+			@include family(segoe);
+			color: #1E1E1E;
+			font-size: 14px;
+		}
+	}	
+
+	.common_aparment_tab {
+
+		ul {
+			margin: 0;
+			display: flex;
+
+			li {
+				@include family(notoregular);
+				color: #1E1E1E;
+				font-size: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 45px;
+			    height: 45px;
+			    flex: 0 0 45px;
+
+				&:not(:last-child){
+					border-right: 1px solid #F1F3F7;
+					 
+				}
+
+			}
+		}
+	}
+
+}
