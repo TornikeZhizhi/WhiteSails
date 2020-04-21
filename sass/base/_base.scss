@@ -31,6 +31,22 @@ a:hover {
     text-decoration: none;
 }
 
+*,
+html,
+html *,
+body,
+body * {
+  cursor: none !important;
+}
+
+/*.cursor-dot-outline, .cursor-dot {
+    display: none !important;
+}
+
+* {
+    cursor: default !important;
+}
+*/
 
 .p-top {
     padding-top:80px;
@@ -55,3 +71,5 @@ a:hover {
 
     }
 }
+
+
