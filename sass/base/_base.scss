@@ -32,3 +32,26 @@ a:hover {
 }
 
 
+.p-top {
+    padding-top:80px;
+}
+
+.p-all {
+     padding: 100px 50px 10px 100px;
+}
+
+.main_link_box_fluid.rotate {
+
+    transform: rotate(180deg);
+    margin-left: 13px;
+
+    .main_link_box{
+
+    transform: rotate(180deg);
+
+    a {
+        padding: 7px 18px 7px 35px;
+    }
+
+    }
+}

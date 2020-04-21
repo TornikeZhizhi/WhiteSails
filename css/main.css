@@ -26,6 +26,20 @@ a {
 a:hover {
   text-decoration: none; }
 
+.p-top {
+  padding-top: 80px; }
+
+.p-all {
+  padding: 100px 50px 10px 100px; }
+
+.main_link_box_fluid.rotate {
+  transform: rotate(180deg);
+  margin-left: 13px; }
+  .main_link_box_fluid.rotate .main_link_box {
+    transform: rotate(180deg); }
+    .main_link_box_fluid.rotate .main_link_box a {
+      padding: 7px 18px 7px 35px; }
+
 @font-face {
   font-family: 'Conv_Segoe UI';
   src: url("../fonts/Segoe UI.eot");
@@ -970,6 +984,59 @@ body.nav-active .navigation_footer span {
       object-fit: cover;
       width: 100%; }
 
+.apartment_header {
+  display: flex;
+  justify-content: space-between; }
+
+.common_tab_links a {
+  font-family: "Conv_bpg_algeti", sans-serif;
+  color: #000000;
+  font-size: 14px;
+  position: relative; }
+  .common_tab_links a:lang(en) {
+    font-family: "Noto Sans", sans-serif; }
+  .common_tab_links a:lang(ka) {
+    font-family: "Noto Sans", sans-serif; }
+  .common_tab_links a:lang(ru) {
+    font-family: "Noto Sans", sans-serif; }
+  .common_tab_links a:not(:last-child) {
+    margin-right: 20px; }
+    .common_tab_links a:not(:last-child):after {
+      background-image: url(../images/right-arrow.png);
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -19px;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 15px;
+      height: 11px;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat; }
+
+.common_tab_links {
+  margin-top: 5px; }
+
+.apartment_title h3 {
+  font-size: 80px;
+  font-family: "Conv_bpg_algeti", sans-serif;
+  color: #000000; }
+  .apartment_title h3:lang(en) {
+    font-family: "Noto Serif italic", sans-serif; }
+  .apartment_title h3:lang(ka) {
+    font-family: "Noto Serif italic", sans-serif; }
+  .apartment_title h3:lang(ru) {
+    font-family: "Noto Serif italic", sans-serif; }
+
+.apartment_up_box {
+  display: flex; }
+  .apartment_up_box > div:first-child {
+    flex: 0 0 35%;
+    max-width: 35%; }
+  .apartment_up_box > div:last-child {
+    flex-grow: 1; }
+
 .main_btn {
   color: #1E1E1E;
   font-family: "Conv_bpg_algeti", sans-serif;
@@ -1393,7 +1460,8 @@ body.nav-active .navigation_footer span {
 .home_advantages_fluid {
   display: flex; }
   .home_advantages_fluid .cd_section_left {
-    max-width: 400px; }
+    max-width: 400px;
+    width: 100%; }
   .home_advantages_fluid .home_advantage_left {
     flex: 70%;
     max-width: 70%;

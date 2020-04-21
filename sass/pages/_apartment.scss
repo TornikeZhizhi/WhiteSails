@@ -1,0 +1,70 @@
+
+
+
+.aparment_fluid {
+	
+}
+
+.apartment_header {
+	display: flex;
+	justify-content: space-between;
+} 
+
+.common_tab_links {
+
+	a {
+		@include family(notosans);
+		color: #000000;
+		font-size: 14px;
+		position: relative;
+
+		&:not(:last-child){
+			margin-right: 20px;
+			&:after{
+				background-image: url(../images/right-arrow.png);
+			    content: "";
+			    position: absolute;
+			    top: 50%;
+			    right: -19px;
+			    transform: translateY(-50%);
+			    z-index: 10;
+			    width: 15px;
+			    height: 11px;
+			    background-size: contain;
+			    background-position: center center;
+			    background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
+
+.common_tab_links {
+	margin-top: 5px;
+ }
+
+ .apartment_title {
+
+ 	h3 {
+ 	font-size: 80px;
+ 	@include family(noto);
+ 	color: #000000;
+
+ 	}
+ }
+
+ .apartment_up_box {
+ 	display: flex;
+ 	&>div {
+
+
+ 		&:first-child{
+ 			flex:0 0 35%;
+ 			max-width: 35%;
+ 		}
+
+ 		&:last-child{
+ 			flex-grow: 1;
+ 		}
+ 	}
+ }

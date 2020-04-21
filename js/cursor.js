@@ -60,6 +60,23 @@ var cursor = {
                 self.toggleCursorSize();
             });
         });
+ 
+
+         const elements4 = document.querySelectorAll('.slider_next_img');
+      
+        Array.from(elements4).forEach(function(el) {
+        
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide_rotate");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide_rotate");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        })
 
         const elements3 = document.querySelectorAll('.draggable');
       
