@@ -36,7 +36,8 @@ $(document).ready(function() {
 
 	if ($("#home_wrapper").length == 0) {
 
-		$("body").css("overflow","unset")
+		// $("body").css("overflow","unset");
+    $("body").css("overflow-y","scroll");
 	}
 
 //Language	
