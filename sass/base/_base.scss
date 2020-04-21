@@ -30,7 +30,9 @@ a {
 a:hover {
     text-decoration: none;
 }
-
+body {
+    overflow: hidden;
+}
 *,
 html,
 html *,

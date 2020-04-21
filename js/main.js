@@ -28,9 +28,10 @@ const app = (() => {
 
 $(document).ready(function() {
 	
-	if ($("#home_wrapper").length > 0) {
+  console.log($("#home_wrapper").length)
+	if ($("#home_wrapper").length == 0) {
 
-		$("body").css("overflow","hidden")
+		$("body").css("overflow","unset")
 	}
 
 //Language	
@@ -220,24 +221,24 @@ var swiperOptions2 = {
 			$(".slider_img2").attr("src",img2)
 
 	}
-	else if(activeSource == Sliderlength - 1) {
+	// else if(activeSource == Sliderlength - 1) {
 
-		current2 = 0
-		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
-		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
-			$(".slider_img1").attr("src",img1)
-			$(".slider_img2").attr("src",img2)
-	}
+	// 	current2 = 0
+	// 	var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+	// 	var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+	// 		$(".slider_img1").attr("src",img1)
+	// 		$(".slider_img2").attr("src",img2)
+	// }
 
-	else {
+	// else {
 
-		current2 = activeSource + 1
-		var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
-		var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
-			$(".slider_img1").attr("src",img1)
-			$(".slider_img2").attr("src",img2)
+	// 	current2 = activeSource + 1
+	// 	var img1 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[0].src
+	// 	var img2 = $(".home_advantage_left .slider-for").find(`[data-slick-index='${current2}']`).find(".slider_for_img img")[1].src
+	// 		$(".slider_img1").attr("src",img1)
+	// 		$(".slider_img2").attr("src",img2)
 
-	}
+	// }
 
 
 
@@ -395,5 +396,12 @@ $(".aparment_tab").click(function(){
 	$(".home_apartment_right_fluid .st_common").removeClass("active")
 	$(".home_apartment_right_fluid").find($(this).attr("data-id")).addClass("active");
 })
+
+
+
+//Mask
+$(".mobile").mask("000 000 000", {placeholder: ''});
+
+
 
 })
