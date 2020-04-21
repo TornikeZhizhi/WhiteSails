@@ -33,21 +33,21 @@ a:hover {
 body {
     overflow: hidden;
 }
-/**,
+*,
 html,
 html *,
 body,
 body * {
   cursor: none !important;
 }
-*/
-.cursor-dot-outline, .cursor-dot {
+
+/*.cursor-dot-outline, .cursor-dot {
     display: none !important;
 }
 
 * {
     cursor: default !important;
-}
+}*/
 
 
 .p-top {
@@ -83,3 +83,25 @@ body * {
     }
 }
 
+
+.blog_box a div {
+    position: absolute;
+    background: #333;
+    background: rgba(244, 126, 94, .8);
+    width: 100%;
+    height: 100%;
+}
+
+
+.masorny_hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+        width: 40%;
+        height: 40%;
+        object-fit: contain;
+    }
+}

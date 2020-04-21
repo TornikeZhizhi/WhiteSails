@@ -27,8 +27,13 @@ const app = (() => {
 })();
 
 $(document).ready(function() {
-	
-  console.log($("#home_wrapper").length)
+
+
+
+
+
+
+
 	if ($("#home_wrapper").length == 0) {
 
 		$("body").css("overflow","unset")
@@ -398,10 +403,41 @@ $(".aparment_tab").click(function(){
 })
 
 
-
 //Mask
 $(".mobile").mask("000 000 000", {placeholder: ''});
 
+//Masorny
+
+if ($(".grid").length > 0) {
+
+  $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: 0,
+      horizontalOrder: true,
+      gutter: 14.7
+    }
+  });
+
+
+  $('[data-fancybox="gallery"]').fancybox({
+    // touch:false,
+    // wheel:false,
+    // hash : false,
+      buttons : [ 
+
+    'zoom',
+    'fullScreen',
+    'close'
+     ],
+     transitionEffect : "circular"
+    })
+}
+    
+  $('.blog_box').each( function() { $(this).hoverdir(); } );
+
+  
 
 
 })
