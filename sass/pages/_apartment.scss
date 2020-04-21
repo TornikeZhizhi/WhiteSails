@@ -216,3 +216,155 @@ select,input {
 		padding-left: 50px !important;
 	}
 }
+
+
+.aparment_advantage_fluid {
+
+	width: 100%;
+	overflow: hidden;
+	margin: 50px 0;
+	display: none;
+}
+
+
+
+.similar_aparment_fluid {
+	margin: 30px auto;
+    .similar_ap_title {
+
+
+         h3 {
+		 	font-size: 80px;
+		 	@include family(noto);
+		 	color: #2C3E50;
+
+       
+    }
+}
+}
+
+.similar_ap_container {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	    padding: 0px 45px;
+	&>div {
+		flex: 0 0 32%;
+		max-width: 32%;
+
+		&>a {
+
+			width: 100%;
+			display: block;
+			height: 230px;
+			position: relative;
+			overflow: hidden;
+			&:after{
+			position: absolute;
+		    bottom: 0;
+		    height: 23%;
+		    width: 100%;
+		    left: 0;
+		    content: "";
+		    z-index: 1;
+		    background-image: linear-gradient(to top, rgba(255,255,2555,.8), rgba(255, 255, 255, 0));
+			}
+
+			.similar_position {
+				position: absolute;
+				bottom: 10px;
+				right: 20px;
+				z-index: 0;
+				display: flex;
+				align-items: center;
+				z-index: 100;
+
+				* {
+					color: #1E1E1E;
+					font-size: 14px;
+					@include family(notosans);
+				}
+
+				span:first-child {
+					margin-right: 20px;
+					position: relative;
+
+					&:after{
+					width:0px;
+					height: 1px;
+					background-color: #000;
+					content: "";
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: calc(100% + 10px);
+					transition: all .4s;
+
+					}
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+	}
+
+.similiar_img_title {
+	    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+
+	a {
+		color: #000000;
+		@include family(notosans);
+		font-size: 24px;
+		border-bottom: 1px solid #F2F2F2;
+		padding-bottom: 4px;
+	}
+
+	span {
+		@include family(notosans);
+		font-size: 24px;
+		color: #fff;
+		transition: all .4s;
+  		 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+}
+}
+
+.similar_ap_box {
+	border-bottom: 1px solid transparent;
+	transition:all .4s;
+	&:hover{
+
+		border-bottom:1px solid #000000;
+
+		.similar_position {
+
+			span:first-child:after{
+				width:45px;
+			}
+		}
+
+		.similiar_img_title {
+			a{
+			border-color: transparent;
+		}
+
+		span {
+
+			text-shadow: unset;
+			color: #000;
+		}
+
+	}
+	}
+
+	
+
+	
+}

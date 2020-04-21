@@ -29,21 +29,20 @@ a:hover {
 body {
   overflow: hidden; }
 
-*,
+/**,
 html,
 html *,
 body,
 body * {
-  cursor: none !important; }
-
-/*.cursor-dot-outline, .cursor-dot {
-    display: none !important;
-}
-
-* {
-    cursor: default !important;
+  cursor: none !important;
 }
 */
+.cursor-dot-outline, .cursor-dot {
+  display: none !important; }
+
+* {
+  cursor: default !important; }
+
 .p-top {
   padding-top: 80px; }
 
@@ -57,6 +56,12 @@ body * {
     transform: rotate(180deg); }
     .main_link_box_fluid.rotate .main_link_box a {
       padding: 7px 18px 7px 35px; }
+
+.common-w {
+  padding: 10px 100px; }
+  .common-w > div {
+    max-width: 1200px;
+    margin: 0 auto; }
 
 @font-face {
   font-family: 'Conv_Segoe UI';
@@ -1159,6 +1164,125 @@ body.nav-active .navigation_footer span {
     color: #707070; }
   .mobile_col input {
     padding-left: 50px !important; }
+
+.aparment_advantage_fluid {
+  width: 100%;
+  overflow: hidden;
+  margin: 50px 0;
+  display: none; }
+
+.similar_aparment_fluid {
+  margin: 30px auto; }
+  .similar_aparment_fluid .similar_ap_title h3 {
+    font-size: 80px;
+    font-family: "Conv_bpg_algeti", sans-serif;
+    color: #2C3E50; }
+    .similar_aparment_fluid .similar_ap_title h3:lang(en) {
+      font-family: "Noto Serif italic", sans-serif; }
+    .similar_aparment_fluid .similar_ap_title h3:lang(ka) {
+      font-family: "Noto Serif italic", sans-serif; }
+    .similar_aparment_fluid .similar_ap_title h3:lang(ru) {
+      font-family: "Noto Serif italic", sans-serif; }
+
+.similar_ap_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 45px; }
+  .similar_ap_container > div {
+    flex: 0 0 32%;
+    max-width: 32%; }
+    .similar_ap_container > div > a {
+      width: 100%;
+      display: block;
+      height: 230px;
+      position: relative;
+      overflow: hidden; }
+      .similar_ap_container > div > a:after {
+        position: absolute;
+        bottom: 0;
+        height: 23%;
+        width: 100%;
+        left: 0;
+        content: "";
+        z-index: 1;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); }
+      .similar_ap_container > div > a .similar_position {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        z-index: 100; }
+        .similar_ap_container > div > a .similar_position * {
+          color: #1E1E1E;
+          font-size: 14px;
+          font-family: "Conv_bpg_algeti", sans-serif; }
+          .similar_ap_container > div > a .similar_position *:lang(en) {
+            font-family: "Noto Sans", sans-serif; }
+          .similar_ap_container > div > a .similar_position *:lang(ka) {
+            font-family: "Noto Sans", sans-serif; }
+          .similar_ap_container > div > a .similar_position *:lang(ru) {
+            font-family: "Noto Sans", sans-serif; }
+        .similar_ap_container > div > a .similar_position span:first-child {
+          margin-right: 20px;
+          position: relative; }
+          .similar_ap_container > div > a .similar_position span:first-child:after {
+            width: 0px;
+            height: 1px;
+            background-color: #000;
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: calc(100% + 10px);
+            transition: all .4s; }
+      .similar_ap_container > div > a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .similar_ap_container .similiar_img_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px; }
+    .similar_ap_container .similiar_img_title a {
+      color: #000000;
+      font-family: "Conv_bpg_algeti", sans-serif;
+      font-size: 24px;
+      border-bottom: 1px solid #F2F2F2;
+      padding-bottom: 4px; }
+      .similar_ap_container .similiar_img_title a:lang(en) {
+        font-family: "Noto Sans", sans-serif; }
+      .similar_ap_container .similiar_img_title a:lang(ka) {
+        font-family: "Noto Sans", sans-serif; }
+      .similar_ap_container .similiar_img_title a:lang(ru) {
+        font-family: "Noto Sans", sans-serif; }
+    .similar_ap_container .similiar_img_title span {
+      font-family: "Conv_bpg_algeti", sans-serif;
+      font-size: 24px;
+      color: #fff;
+      transition: all .4s;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+      .similar_ap_container .similiar_img_title span:lang(en) {
+        font-family: "Noto Sans", sans-serif; }
+      .similar_ap_container .similiar_img_title span:lang(ka) {
+        font-family: "Noto Sans", sans-serif; }
+      .similar_ap_container .similiar_img_title span:lang(ru) {
+        font-family: "Noto Sans", sans-serif; }
+
+.similar_ap_box {
+  border-bottom: 1px solid transparent;
+  transition: all .4s; }
+  .similar_ap_box:hover {
+    border-bottom: 1px solid #000000; }
+    .similar_ap_box:hover .similar_position span:first-child:after {
+      width: 45px; }
+    .similar_ap_box:hover .similiar_img_title a {
+      border-color: transparent; }
+    .similar_ap_box:hover .similiar_img_title span {
+      text-shadow: unset;
+      color: #000; }
 
 .main_btn {
   color: #1E1E1E;
