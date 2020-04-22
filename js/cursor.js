@@ -125,7 +125,39 @@ var cursor = {
                 self.toggleCursorSize();
             });
         });
+
+        //Interior slider
+             const elements_intleft = document.querySelectorAll('.interior_slider_left');
+      
+        Array.from(elements_intleft).forEach(function(el) {
         
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+
+        const elements_int_right = document.querySelectorAll('.interior_slider_right');
+      
+        Array.from(elements_int_right).forEach(function(el) {
+           
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide_rotate");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide_rotate");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
         // Click events
         document.addEventListener('mousedown', function() {
             self.cursorEnlarged = true;

@@ -113,6 +113,18 @@ $('.home_about_slider').slick({
     nextArrow: $(".home_about_trigger_right")
 
 });
+$('.interios_slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  infinite:true,
+  arrows: true,
+  dots:true,
+  speed:1100,
+  autoplaySpeed: 3000,
+  prevArrow: $(".interior_slider_left"),
+    nextArrow: $(".interior_slider_right")
+
+});
 
 
 
