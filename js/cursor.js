@@ -158,6 +158,41 @@ var cursor = {
                 self.toggleCursorSize();
             });
         });
+
+
+         //about slider
+                  const elements_aboout_left = document.querySelectorAll('.swiper_about_button-prev');
+      
+        Array.from(elements_aboout_left).forEach(function(el) {
+        
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+
+        const elements_about_right = document.querySelectorAll('.swiper_about_button-next');
+      
+        Array.from(elements_about_right).forEach(function(el) {
+           
+            el.addEventListener('mouseover', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.add("hide_rotate");
+                self.cursorEnlarged = true;
+                self.toggleCursorSize();
+            });
+            el.addEventListener('mouseout', function() {
+                document.getElementsByClassName("cursor-dot-outline")[0].classList.remove("hide_rotate");
+                self.cursorEnlarged = false;
+                self.toggleCursorSize();
+            });
+        });
+
         // Click events
         document.addEventListener('mousedown', function() {
             self.cursorEnlarged = true;

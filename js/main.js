@@ -450,7 +450,18 @@ if ($(".grid").length > 0) {
     
   $('.blog_box').each( function() { $(this).hoverdir(); } );
 
-  
+    var swiper = new Swiper('.about-swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+     speed: 1000,
+  grabCursor: true,
+  watchSlidesProgress: true,
+  mousewheelControl: true,
+    navigation: {
+    nextEl: ".swiper_about_button-next",
+    prevEl: ".swiper_about_button-prev"
+  },
+  })
 
 
 })
