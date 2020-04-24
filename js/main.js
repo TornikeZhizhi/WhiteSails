@@ -40,7 +40,7 @@ $(document).ready(function() {
     $("body").css("overflow-y","scroll");
 	}
 
-  if ($("#apartments_select_svg") !== 0) {
+  if ($("#apartments_select_svg").length > 0) {
       $("body").css("overflow","hidden");
   }
 
@@ -467,5 +467,39 @@ if ($(".grid").length > 0) {
   },
   })
 
+
+//range sider
+    $( "#slider-range_left" ).slider({
+      range: true,
+      min: 0,
+      max: 11,
+      values: [ 0, 11 ],
+      slide: function( event, ui ) {
+        // $( "#amount" ).val( "Floor" + ui.values[ 0 ] + " - Floor" + ui.values[ 1 ] );
+        $("#slider-range_left").next(".floor_properties_fluid").find(".floor_from").text(ui.values[0])
+        $("#slider-range_left").next(".floor_properties_fluid").find(".floor_to").text(ui.values[1])
+      }
+    });
+
+        $( "#slider-range_right" ).slider({
+      range: true,
+      min: 0,
+      max: 170,
+      values: [ 0, 170 ],
+      slide: function( event, ui ) {
+        // $( "#amount" ).val( "Floor" + ui.values[ 0 ] + " - Floor" + ui.values[ 1 ] );
+         $("#slider-range_right").next(".floor_properties_fluid").find(".floor_from").text(ui.values[0])
+        $("#slider-range_right").next(".floor_properties_fluid").find(".floor_to").text(ui.values[1])
+      }
+    });
+ 
+        $(".apartments_filter_button").on("click",function(){
+
+          $(".aparment_filter_fluid").slideToggle()
+          $(this).toggleClass("active")
+        })
+
+
+  //
 
 })
