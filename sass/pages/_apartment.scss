@@ -659,3 +659,65 @@ select,input {
         height: calc(100% - 48px);
     opacity: 0;
     }
+
+
+
+
+.select_aparment_fluid {
+	display: flex;
+	     padding: 100px 0px 10px 99px;
+
+	 &>div {
+	 	height: 100%;
+	 	&:first-child {
+	 		flex:0 0 30%;
+	 		max-width: 30%;
+	 		    margin-top: 5%;
+	 	}
+
+	 	&:last-child {
+	 		flex: 0 0 70%;
+	 		max-width: 70%;
+	 	}
+	 }
+
+	 .home_apartment_right_fluid {
+	 	width: 65vw;
+	 }
+
+	 .common_aparment_tab_fluid {
+	 	left: unset;
+	 	    bottom: 122px;
+	 	right: 30px;
+	 }
+
+	 .cd_section_left {
+
+	 	h2 {
+	 		white-space: normal;
+	 		line-height: 70px;
+	 		a{
+
+	 		white-space: normal;
+	 		}
+	 	}
+	 	.cd_section_1_title:after {
+	 		content: unset !important;
+	 	}
+	 }
+
+
+	 #apartments_select_svg {
+	 	    height: 100%;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+	 	 svg {
+	 	 	    width: 67vw;
+
+    margin-bottom: 38px;
+	 	 }
+	 }
+}    

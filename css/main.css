@@ -42,7 +42,8 @@ body * {
 
 * {
     cursor: default !important;
-}*/
+}
+*/
 .p-top {
   padding-top: 80px; }
 
@@ -50,6 +51,9 @@ body * {
   padding: 100px 50px 10px 100px; }
   .p-all > div {
     position: relative; }
+
+.p-all2 {
+  padding: 100px 50px 10px 100px; }
 
 .main_link_box_fluid.rotate {
   transform: rotate(180deg);
@@ -570,11 +574,19 @@ body::before {
     margin-left: 27%;
     width: 50%;
     font-size: 16px; }
-    .about-container .about-content p {
-      margin-bottom: 30px; }
+    .about-container .about-content * {
+      font-family: "Conv_bpg_algeti", sans-serif;
+      color: #2C3E50;
+      font-size: 16px; }
+      .about-container .about-content *:lang(en) {
+        font-family: "Noto Sans", sans-serif; }
+      .about-container .about-content *:lang(ka) {
+        font-family: "Noto Sans", sans-serif; }
+      .about-container .about-content *:lang(ru) {
+        font-family: "Noto Sans", sans-serif; }
     .about-container .about-content ul {
       color: #2c3e50;
-      margin: 40px 0 20px 20px; }
+      margin: 20px 0 20px 20px; }
       .about-container .about-content ul li {
         position: relative;
         background-image: url(../images/bullet.png);
@@ -1646,6 +1658,41 @@ body.nav-active .navigation_footer span {
   z-index: 1;
   height: calc(100% - 48px);
   opacity: 0; }
+
+.select_aparment_fluid {
+  display: flex;
+  padding: 100px 0px 10px 99px; }
+  .select_aparment_fluid > div {
+    height: 100%; }
+    .select_aparment_fluid > div:first-child {
+      flex: 0 0 30%;
+      max-width: 30%;
+      margin-top: 5%; }
+    .select_aparment_fluid > div:last-child {
+      flex: 0 0 70%;
+      max-width: 70%; }
+  .select_aparment_fluid .home_apartment_right_fluid {
+    width: 65vw; }
+  .select_aparment_fluid .common_aparment_tab_fluid {
+    left: unset;
+    bottom: 122px;
+    right: 30px; }
+  .select_aparment_fluid .cd_section_left h2 {
+    white-space: normal;
+    line-height: 70px; }
+    .select_aparment_fluid .cd_section_left h2 a {
+      white-space: normal; }
+  .select_aparment_fluid .cd_section_left .cd_section_1_title:after {
+    content: unset !important; }
+  .select_aparment_fluid #apartments_select_svg {
+    height: 100%;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .select_aparment_fluid #apartments_select_svg svg {
+      width: 67vw;
+      margin-bottom: 38px; }
 
 .main_btn {
   color: #1E1E1E;

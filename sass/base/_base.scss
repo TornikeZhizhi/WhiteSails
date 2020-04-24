@@ -47,8 +47,8 @@ body * {
 
 * {
     cursor: default !important;
-}*/
-
+}
+*/
 
 .p-top {
     padding-top:80px;
@@ -60,6 +60,12 @@ body * {
      &>div {
         position: relative;
      }
+}
+
+.p-all2 {
+     padding: 100px 50px 10px 100px;
+
+ 
 }
 
 .main_link_box_fluid.rotate {

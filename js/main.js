@@ -34,11 +34,15 @@ $(document).ready(function() {
 
 
 
-	if ($("#home_wrapper").length == 0) {
 
-		// $("body").css("overflow","unset");
+	if ($("#home_wrapper").length == 0 ) {
+
     $("body").css("overflow-y","scroll");
 	}
+
+  if ($("#apartments_select_svg") !== 0) {
+      $("body").css("overflow","hidden");
+  }
 
 //Language	
 	$(document).on("click",function(){
