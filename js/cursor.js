@@ -215,6 +215,8 @@ var cursor = {
             self.$dot.style.top = self.endY + 'px';
             self.$dot.style.left = self.endX + 'px';
         });
+
+        
         
         // Hide/show cursor
         document.addEventListener('mouseenter', function(e) {
