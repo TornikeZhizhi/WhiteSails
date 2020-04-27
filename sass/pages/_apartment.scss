@@ -872,3 +872,61 @@ select,input {
 
 
 }
+
+.contact_title {
+	
+	* {
+		@include family(notosans);
+		color:$text-color;
+		font-size:80px;
+	}
+}
+
+.search_fluid {
+	.similar_ap_container {
+		padding: 0 !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+
+	}
+	.similar_ap_container > div {
+
+		flex: 100% !important;
+		max-width: 100% !important;
+
+	}
+}
+
+.search_footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	
+		.apartment_filter_wrapper {
+	    margin: 50px 0px;
+	    padding-left: 38px;
+	    flex-grow: 1;
+	}
+}
+
+
+.search_back {
+		.home_dots  {
+
+			*:before{
+				content:unset !important;
+			}
+			*:after{
+				content:unset !important;
+			}
+
+				background-color: #73CABE !important;
+				color: #fff !important;
+
+			img {
+				opacity:1 !important;
+				filter: brightness(0) invert(1);
+			}
+		}
+}

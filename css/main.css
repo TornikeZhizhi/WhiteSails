@@ -4227,6 +4227,46 @@ body.nav-active .navigation_footer span {
     .apartments_filter_button *:lang(ru) {
       font-family: "Noto Sans", sans-serif; }
 
+.contact_title * {
+  font-family: "Conv_bpg_algeti", sans-serif;
+  color: #2C3E50;
+  font-size: 80px; }
+  .contact_title *:lang(en) {
+    font-family: "Noto Sans", sans-serif; }
+  .contact_title *:lang(ka) {
+    font-family: "Noto Sans", sans-serif; }
+  .contact_title *:lang(ru) {
+    font-family: "Noto Sans", sans-serif; }
+
+.search_fluid .similar_ap_container {
+  padding: 0 !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important; }
+.search_fluid .similar_ap_container > div {
+  flex: 100% !important;
+  max-width: 100% !important; }
+
+.search_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+  .search_footer .apartment_filter_wrapper {
+    margin: 50px 0px;
+    padding-left: 38px;
+    flex-grow: 1; }
+
+.search_back .home_dots {
+  background-color: #73CABE !important;
+  color: #fff !important; }
+  .search_back .home_dots *:before {
+    content: unset !important; }
+  .search_back .home_dots *:after {
+    content: unset !important; }
+  .search_back .home_dots img {
+    opacity: 1 !important;
+    filter: brightness(0) invert(1); }
+
 .main_btn {
   color: #1E1E1E;
   font-family: "Conv_bpg_algeti", sans-serif;
