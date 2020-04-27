@@ -30,7 +30,12 @@ $(document).ready(function() {
 
 
 
-
+ $('.title-section').click(function() {
+    $(this)
+      .find($('.down-arrow'))
+      .toggleClass('rotate');
+      $(this).next('.address-box').slideToggle()
+  })
 
 
 
@@ -43,7 +48,10 @@ $(document).ready(function() {
   if ($("#apartments_select_svg").length > 0) {
       $("body").css("overflow","hidden");
   }
-
+  if ($(".interior_fluid").length > 0) {
+      $("body").css("overflow","hidden");
+  }
+   
 //Language	
 	$(document).on("click",function(){
 		$(".language_dropdown li").slideUp(50);
@@ -442,6 +450,7 @@ if ($(".grid").length > 0) {
     // touch:false,
     // wheel:false,
     // hash : false,
+    loop:true,
       buttons : [ 
 
     'zoom',
