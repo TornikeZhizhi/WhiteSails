@@ -85,6 +85,7 @@
     margin-left: 27%;
     width: 50%;
     font-size: 16px;
+    text-aling:left;
 
     * {
 
@@ -96,7 +97,7 @@
     
     ul {
       color: #2c3e50;
-      margin: 20px 0 20px 20px;
+       margin: 10px 0 15px 10px;
 
       li {
         position: relative;
@@ -209,3 +210,197 @@
 .one-page-scroll .offer-section:nth-child(odd) .offer-text {
   transform: translate(-50px, 70px);
 }
+
+
+#fullpage {
+    .section {
+      position: relative;
+
+
+      .about_menu {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+
+        .dot_title {
+            position: absolute;
+            left: -95px;
+            color: #fff;
+            background-color: #9ED6CA;
+            font-family: "Conv_bpg_algeti", sans-serif;
+            top: 50%;
+            transform: translateY(-50%) translateX(-10px);
+            font-size: 16px;
+            padding: 5px 12px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s;
+
+
+
+            &:after{
+                  content:"";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 100%;
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-left: 8px solid #9ED6CA;
+                border-bottom: 7px solid transparent;
+            }
+        }
+        &>li {
+          margin-bottom: 10px;
+
+             &:first-child {
+                display:none !important;
+            }
+          a {
+            display: block;
+              width: 20px;
+              height: 20px;
+              flex: 0 0 20px;
+              border-radius: 50%;
+              background-color: #fff;
+              border:2px solid #F2F2F2;
+              position: relative;
+            
+
+              &:hover {
+                .dot_title {
+                  transform: translateY(-50%) translateX(0px);
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+
+
+              &:after{
+
+                content:"";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 1;
+                background-color: #9ED6CA;
+                border-radius: 50%;
+                width: 11px;
+                height: 11px;
+              } 
+          }
+        }
+      }
+    }
+    .section:nth-child(2){
+
+      background:#F4FAFA;
+
+      .offer_text_fluid{
+            transform: translate(0px, 0px) !important;
+      }
+    }
+
+    .section:last-child {
+       background:#F4FAFA;
+    }
+    .section:nth-child(odd){
+
+      .offer-section .offer-img{
+        order: -1;
+      }
+
+      .offer_text_fluid{
+            transform: translate(-50px, 50px);
+      }
+
+    }
+    .offer-container {
+      text-align: center;
+      margin:20px 0;
+      h2 {
+        @include family(noto);
+        font-size: 80px;
+        color: #2C3E50;
+      }
+    }
+}
+
+
+.offer-section {
+
+  display: flex;
+  align-items:center;
+  padding: 0 130px 5% 100px;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  .offer-img {
+    flex: 0 0 52%;
+    max-width: 52%;
+
+    a {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+        height: calc(100vh - 300px);
+        object-fit: cover;
+      }
+    }
+  }
+
+  .offer_text_fluid {
+       background-color: #F4FAFA;
+    padding: 34px 40px 35px 40px;
+    transform: translate(50px, 50px);
+  }
+
+
+}
+
+.offer_text_fluid {
+  background-color: #F4FAFA;
+  padding: 60px 40px 40px 60px;
+
+
+   .offer-title {
+        margin-bottom: 20px;
+      * {
+        color: #2C3E50;
+        font-size: 30px;
+        @include family(notosans);
+      }
+   }
+
+
+   .offer_text {
+
+      * {
+        color: #2C3E50;
+        font-size: 18px;
+        @include family(notosans);
+      }
+   }
+}
+
+.intro {
+
+   height: 100%;
+   padding-top: 80px;
+
+   .offer_section_fluid {
+    height: 100%;
+
+     .offer-section {
+      height: 100%;
+     }
+   }
+}
+
