@@ -133,6 +133,7 @@
 				color: #1E1E1E;
 				@include family(notosans);
 				font-size: 16px;
+				margin-bottom:7px;
 			}
 		}
 	}
@@ -144,6 +145,13 @@ justify-content: space-between;
 width: 100%;
 max-width: 430px;
 margin-top: 20px;
+
+select {
+	background-image: url("../images/arrow_dow.png");
+	background-position: 95% 18px;
+    background-size: 14px;
+    background-repeat: no-repeat;
+}
 
 select,input {
 	border-bottom: 1px solid #5E5E5E;
@@ -929,4 +937,11 @@ select,input {
 				filter: brightness(0) invert(1);
 			}
 		}
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
 }

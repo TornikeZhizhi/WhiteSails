@@ -2661,6 +2661,18 @@ abbr, acronym {
   background: #F4FAFA; }
   #fullpage .section:nth-child(2) .offer_text_fluid {
     transform: translate(0px, 0px) !important; }
+  #fullpage .section:nth-child(2) .offer-img {
+    position: relative; }
+    #fullpage .section:nth-child(2) .offer-img:after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 222;
+      width: 85%;
+      height: 10px;
+      background-color: #FFD393; }
 #fullpage .section:last-child {
   background: #F4FAFA; }
 #fullpage .section:nth-child(odd) .offer-section .offer-img {
@@ -3009,11 +3021,11 @@ abbr, acronym {
         .contact-container .address-container .address-section .title-section * {
           font-family: "Conv_bpg_algeti", sans-serif; }
           .contact-container .address-container .address-section .title-section *:lang(en) {
-            font-family: "Noto Serif italic", sans-serif; }
+            font-family: "Noto Sans", sans-serif; }
           .contact-container .address-container .address-section .title-section *:lang(ka) {
-            font-family: "Noto Serif italic", sans-serif; }
+            font-family: "Noto Sans", sans-serif; }
           .contact-container .address-container .address-section .title-section *:lang(ru) {
-            font-family: "Noto Serif italic", sans-serif; }
+            font-family: "Noto Sans", sans-serif; }
         .contact-container .address-container .address-section .title-section .address-title {
           color: #2c3e50;
           font-size: 30px; }
@@ -3567,6 +3579,9 @@ body {
         width: 25px; }
       .news-container .news-grid .see-more a span {
         margin: 15px; } }
+.addres_fluid .address-section:first-child .address-box {
+  display: block; }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -3912,7 +3927,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 .header_languages {
   margin-left: 36px;
   position: relative;
-  margin-top: 5px; }
+  margin-top: 1px; }
   .header_languages a {
     font-family: "Conv_bpg_algeti", sans-serif;
     color: #2C3E50;
@@ -4181,7 +4196,8 @@ body.nav-active .navigation_footer span {
   .apartment_right_content .apartment_right_list ul li {
     color: #1E1E1E;
     font-family: "Conv_bpg_algeti", sans-serif;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 7px; }
     .apartment_right_content .apartment_right_list ul li:lang(en) {
       font-family: "Noto Sans", sans-serif; }
     .apartment_right_content .apartment_right_list ul li:lang(ka) {
@@ -4195,6 +4211,11 @@ body.nav-active .navigation_footer span {
   width: 100%;
   max-width: 430px;
   margin-top: 20px; }
+  .apartment_right_content .apartment_order_form select {
+    background-image: url("../images/arrow_dow.png");
+    background-position: 95% 18px;
+    background-size: 14px;
+    background-repeat: no-repeat; }
   .apartment_right_content .apartment_order_form select, .apartment_right_content .apartment_order_form input {
     border-bottom: 1px solid #5E5E5E;
     width: 100%;
@@ -4751,6 +4772,12 @@ body.nav-active .navigation_footer span {
   .search_back .home_dots img {
     opacity: 1 !important;
     filter: brightness(0) invert(1); }
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none; }
 
 .main_btn {
   color: #1E1E1E;
@@ -5437,5 +5464,12 @@ body.nav-active .navigation_footer span {
   .aparment_tab.active {
     background-color: #FFF9EF;
     color: #F47D5D !important; }
+
+.home_advantage_left .cd_section_1_title h2, .home_advantage_left .cd_section_1_title a {
+  font-size: 30px; }
+.home_advantage_left .cd_section_1_text {
+  width: 100%;
+  max-width: 95%;
+  margin: 5px 0 20px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -305,6 +305,25 @@
       .offer_text_fluid{
             transform: translate(0px, 0px) !important;
       }
+
+      .offer-img {
+
+         position: relative;
+
+         &:after{
+              content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 222;
+    width: 85%;
+    height: 10px;
+    background-color: #FFD393;
+         }
+      }
+
+
     }
 
     .section:last-child {

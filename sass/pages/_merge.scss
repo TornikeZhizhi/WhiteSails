@@ -357,7 +357,7 @@
         padding: 25px 0;
         cursor: pointer;
         * {
-          @include family(noto);
+          @include family(notosans);
         }
         .address-title {
           color: #2c3e50;
@@ -1082,3 +1082,13 @@ body {
 
 
 
+.addres_fluid {
+
+  .address-section:first-child{
+
+    .address-box {
+
+    display:block;
+    }
+  }
+}
