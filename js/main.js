@@ -512,4 +512,32 @@ if ($(".grid").length > 0) {
   //
   
 
+//floor tabs
+
+  var floorLength = $(".floor_tabs_container .floor_tabs").length
+  var showFloors = 6;
+  var floorHeight = 50;
+  var hiddenFloors = floorLength - showFloors -1 
+  var valueDown = 0;
+  var valueUp = 0;
+
+  $(".floor_arrow.up").on("click",function(){
+     if (-floorHeight * hiddenFloors <= valueUp) {
+       valueUp = valueUp - 50
+       valueDown  = valueUp 
+       $(".floor_tabs").css("transform","translateY("+valueUp +"px)");
+     }
+
+  })
+
+  $(".floor_arrow.down").on("click",function(){
+    if (valueUp <= -50) {
+      valueDown = valueDown + 50;
+      valueUp = valueDown
+      $(".floor_tabs").css("transform","translateY("+valueDown +"px)");
+    }
+ 
+  })
+
+
 })
