@@ -517,9 +517,10 @@ if ($(".grid").length > 0) {
   var floorLength = $(".floor_tabs_container .floor_tabs").length
   var showFloors = 6;
   var floorHeight = 50;
-  var hiddenFloors = floorLength - showFloors -1 
+  var hiddenFloors = floorLength - showFloors -1;
   var valueDown = 0;
   var valueUp = 0;
+
 
   $(".floor_arrow.up").on("click",function(){
      if (-floorHeight * hiddenFloors <= valueUp) {

@@ -2452,7 +2452,7 @@ abbr, acronym {
 
 .about-container {
   background: white;
-  padding: 80px 0 100px; }
+  padding: 10px 0 100px; }
   .about-container .title {
     font-family: "Conv_bpg_algeti", sans-serif;
     font-size: 70px;
@@ -3626,6 +3626,9 @@ body {
         margin: 15px; } }
 .addres_fluid .address-section:first-child .address-box {
   display: block; }
+
+.iScrollVerticalScrollbar {
+  right: 0px !important; }
 
 .swiper-container {
   width: 100%;
