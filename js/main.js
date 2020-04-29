@@ -568,8 +568,22 @@ if ($(".grid").length > 0) {
  $(".building_a .st0").each(function(index,el){
 
   $(this).mouseenter(function(e,ind){
-    $(".floor_title .floor_number").text(index + 1);
-    $(".floor_title a").attr("href",$(this).data("url"));
+
+       $(".floor_title .floor_number").text(index + 2);
+      $(".floor_title a").attr("href",$(this).data("url"));
+      
+    if (index == 0) {
+
+       $(".floor_title .floor_end").text("nd");
+    }else if(index == 1){
+
+       $(".floor_title .floor_end").text("rd");
+
+    }else if (index >1) {
+      $(".floor_title .floor_end").text("th");
+
+    }
+   
 
   })
 

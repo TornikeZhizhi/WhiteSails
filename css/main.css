@@ -5522,6 +5522,8 @@ select {
   max-width: 95%;
   margin: 5px 0 20px; }
 
+.building_a .disable {
+  fill: transparent; }
 .building_a .st0 {
   fill: transparent;
   transition: all .4s;
