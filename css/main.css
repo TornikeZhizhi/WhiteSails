@@ -42,8 +42,7 @@ body * {
 
 * {
     cursor: default !important;
-}
-*/
+}*/
 .p-top {
   padding-top: 80px; }
 
@@ -2926,8 +2925,8 @@ abbr, acronym {
     .floor-container .apartment_container .building-section {
       display: flex;
       justify-content: space-between; }
-      .floor-container .apartment_container .building-section .building-img img {
-        height: calc(100vh - 220px); }
+      .floor-container .apartment_container .building-section .building-img svg {
+        height: calc(100vh - 186px); }
       .floor-container .apartment_container .building-section .building-info {
         width: 100%;
         position: relative;
@@ -2994,8 +2993,8 @@ abbr, acronym {
     content: ""; }
 
 .building-container {
-  padding: 100px 90px 0 100px;
-  height: calc(100vh - 24px); }
+  padding: 90px 90px 0 100px;
+  height: 100vh; }
 
 @media only screen and (max-width: 991px) {
   .floor-container {
@@ -3629,6 +3628,9 @@ body {
 
 .iScrollVerticalScrollbar {
   right: 0px !important; }
+
+.floor_title * {
+  color: #2C3E50; }
 
 .swiper-container {
   width: 100%;
@@ -5519,5 +5521,16 @@ select {
   width: 100%;
   max-width: 95%;
   margin: 5px 0 20px; }
+
+.building_a .st0 {
+  fill: transparent;
+  transition: all .4s;
+  opacity: 0.8; }
+  .building_a .st0:hover {
+    fill: #73CABE; }
+
+.common_building .st_common {
+  opacity: 0.8;
+  fill: transparent; }
 
 /*# sourceMappingURL=main.css.map */

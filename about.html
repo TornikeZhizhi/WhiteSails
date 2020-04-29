@@ -467,19 +467,6 @@
 <script src="js/velocity.ui.min.js"></script>
 <script src="js/mainscroll.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['section0', 'section1', 'section2', 'section3','section4','section5','section6','section7','section8','section9','section10','section11','section12'],
 
-        scrollOverflow: true
-    });
-
-    $("#fullpage .section").each(function(index,el) {
-      console.log(index)
-      $(".about_menu").append(`<li data-menuanchor="section${index}"><a href="#section${index}"><span class="dot_title">Visa Free</span></a></li> `)
-     
-    })
-
-</script>
   </body>
 </html>

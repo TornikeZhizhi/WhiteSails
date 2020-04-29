@@ -541,4 +541,38 @@ if ($(".grid").length > 0) {
   })
 
 
+  //about js
+
+
+
+     var myFullpage = new fullpage('#fullpage', {
+        anchors: ['section0', 'section1', 'section2', 'section3','section4','section5','section6','section7','section8','section9','section10','section11','section12'],
+
+        scrollOverflow: true
+    });
+
+    $("#fullpage .section").each(function(index,el) {
+      $(".about_menu").append(`<li data-menuanchor="section${index}"><a href="#section${index}"><span class="dot_title">Visa Free</span></a></li> `)
+     
+    })
+
+
+
+//svg js
+
+ $('.common_building').on('click','.st0,.st_common',function(){
+      window.location = $(this).data('url');
+  });
+
+
+ $(".building_a .st0").each(function(index,el){
+
+  $(this).mouseenter(function(e,ind){
+    $(".floor_title .floor_number").text(index + 1);
+    $(".floor_title a").attr("href",$(this).data("url"));
+
+  })
+
+ })
+
 })
