@@ -414,10 +414,10 @@
     width: 70%;
 
     .address-section {
-      border-bottom: 1px solid #f2f2f2;
 
       .title-section {
         display: flex;
+      border-bottom: 1px solid #f2f2f2;
         justify-content: space-between;
         align-items: center;
         padding: 25px 0;
@@ -429,7 +429,28 @@
           color: #2c3e50;
           font-size: 30px;
         }
+        .down-arrow {
+                width: 22px;
+            height: 22px;
+            background: transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
 
+            &:before{
+               position: absolute;
+              top: -4px;
+              left: -4px;
+              border: 1px solid #F2F2F2;
+              content: '';
+              z-index: 10;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+            }
+        }
         &:hover {
           .down-arrow {
             width: 22px;
@@ -495,6 +516,7 @@
           text-transform: capitalize;
           font-size: 16px;
           color: #1e1e1e;
+          margin-top: 10px;
 
           * {
             @include family(notosans);
@@ -1160,7 +1182,7 @@ body {
 .addres_fluid {
 
   .address-section:first-child{
-
+      
     .address-box {
 
     display:block;
@@ -1226,3 +1248,19 @@ body {
       font-size: 14px;
     }
   }
+
+.address-box {
+
+   * {
+    @include family(notosans);
+   }
+}
+
+.contact-container.contact {
+  .address-section {
+    border-bottom: 1px solid #f2f2f2
+  }
+  .title-section {
+    border:unset !important;
+  }
+}
