@@ -522,8 +522,9 @@ if ($(".grid").length > 0) {
   var valueUp = 0;
 
 
-  $(".floor_arrow.up").on("click",function(){
-     if (-floorHeight * hiddenFloors <= valueUp) {
+  $(".floor_arrow.down").on("click",function(){
+        console.log(valueUp,valueDown)
+       if (valueUp >= 50) {
        valueUp = valueUp - 50
        valueDown  = valueUp 
        $(".floor_tabs").css("transform","translateY("+valueUp +"px)");
@@ -531,12 +532,13 @@ if ($(".grid").length > 0) {
 
   })
 
-  $(".floor_arrow.down").on("click",function(){
-    if (valueUp <= -50) {
+  $(".floor_arrow.up").on("click",function(){
+    
+     if (floorHeight * hiddenFloors >= valueUp) {
       valueDown = valueDown + 50;
       valueUp = valueDown
       $(".floor_tabs").css("transform","translateY("+valueDown +"px)");
-    }
+       } 
  
   })
 

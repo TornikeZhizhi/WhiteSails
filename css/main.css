@@ -108,6 +108,32 @@ body * {
   src: url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+/*
+@font-face {
+    font-family: 'Noto Sans Georgian Blk';
+    src: url('../fonts/NotoSansGeorgian-Black.woff2') format('woff2'),
+        url('../fonts/NotoSansGeorgian-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans Georgian Cond';
+    src: url('../fonts/NotoSansGeorgian-Condensed.woff2') format('woff2'),
+        url('../fonts/NotoSansGeorgian-Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+@font-face {
+  font-family: 'Noto Sans Georgian';
+  src: url("../fonts/NotoSansGeorgian-Regular.woff2") format("woff2"), url("../fonts/NotoSansGeorgian-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Noto Serif Georgian';
+  src: url("../fonts/NotoSerifGeorgian-Regular.woff2") format("woff2"), url("../fonts/NotoSerifGeorgian-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 /*! jQuery UI - v1.12.1 - 2016-09-14
 * http://jqueryui.com
 * Includes: core.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, draggable.css, resizable.css, progressbar.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css
@@ -2943,19 +2969,22 @@ abbr, acronym {
             color: #2c3e50;
             font-family: "Conv_bpg_algeti", sans-serif; }
             .floor-container .apartment_container .building-section .building-info .building-info-box h4:lang(en) {
-              font-family: "Noto Serif italic", sans-serif; }
+              font-family: "Noto Sans", sans-serif; }
             .floor-container .apartment_container .building-section .building-info .building-info-box h4:lang(ka) {
-              font-family: "Noto Serif italic", sans-serif; }
+              font-family: "Noto Sans", sans-serif; }
             .floor-container .apartment_container .building-section .building-info .building-info-box h4:lang(ru) {
-              font-family: "Noto Serif italic", sans-serif; }
+              font-family: "Noto Sans", sans-serif; }
           .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments {
-            width: fit-content;
-            margin-top: 50px;
-            color: #707070; }
+            margin-top: 12px;
+            color: #707070;
+            display: flex; }
             .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments span {
-              padding: 30px;
+              padding: 10px;
               border: 1px solid #707070;
-              font-family: "Conv_bpg_algeti", sans-serif; }
+              font-family: "Conv_bpg_algeti", sans-serif;
+              color: #2C3E50;
+              display: flex;
+              align-items: center; }
               .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments span:lang(en) {
                 font-family: "Noto Sans", sans-serif; }
               .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments span:lang(ka) {
@@ -3367,7 +3396,7 @@ body {
       .news-container .news-section .news-img img {
         width: 100%;
         max-height: 700px;
-        transition: 0.3s;
+        transition: 0.4s;
         border: 4px solid transparent; }
         .news-container .news-section .news-img img:hover {
           border: 4px solid #ffd392; }
@@ -3445,7 +3474,16 @@ body {
         bottom: 0px;
         background: #ffd392;
         padding: 6px 15px 4px 6px;
-        display: none; }
+        transition: all .4s;
+        opacity: 0; }
+        .news-container .news-grid .news-box .news-box-img .news-date * {
+          font-family: "Conv_bpg_algeti", sans-serif; }
+          .news-container .news-grid .news-box .news-box-img .news-date *:lang(en) {
+            font-family: "Noto Sans", sans-serif; }
+          .news-container .news-grid .news-box .news-box-img .news-date *:lang(ka) {
+            font-family: "Noto Sans", sans-serif; }
+          .news-container .news-grid .news-box .news-box-img .news-date *:lang(ru) {
+            font-family: "Noto Sans", sans-serif; }
         .news-container .news-grid .news-box .news-box-img .news-date img {
           width: 30px;
           margin: 0 8px;
@@ -3455,7 +3493,7 @@ body {
       .news-container .news-grid .news-box:hover .news-box-img {
         border: 4px solid #ffd392; }
         .news-container .news-grid .news-box:hover .news-box-img .news-date {
-          display: block; }
+          opacity: 1; }
   .news-container .news-grid .see-more {
     text-align: center;
     margin-top: 50px; }
@@ -3527,7 +3565,8 @@ body {
   .news-page-container .news-text .d-flex {
     padding-bottom: 20px; }
     .news-page-container .news-text .d-flex .d-flex-img {
-      width: 80%; }
+      width: 85%;
+      padding: 14px 2px 0 0; }
       .news-page-container .news-text .d-flex .d-flex-img img {
         width: 100%;
         max-height: 750px; }
@@ -3631,6 +3670,37 @@ body {
 
 .floor_title * {
   color: #2C3E50; }
+
+.vacant_quantity {
+  font-size: 32px;
+  border-left: none !important;
+  padding: 12px 26px !important; }
+
+.building-info-box > div {
+  width: 100%;
+  max-width: 287px; }
+
+.floor_tabs_container {
+  display: flex;
+  flex-direction: column-reverse; }
+
+.floor_arrow {
+  user-select: none; }
+
+.news-info .main_link_box_fluid {
+  margin-top: 15px; }
+
+.main-title span {
+  font-family: "Conv_bpg_algeti", sans-serif; }
+  .main-title span:lang(en) {
+    font-family: "Noto Sans", sans-serif; }
+  .main-title span:lang(ka) {
+    font-family: "Noto Sans", sans-serif; }
+  .main-title span:lang(ru) {
+    font-family: "Noto Sans", sans-serif; }
+
+.similiar_img_title sup {
+  font-size: 14px; }
 
 .swiper-container {
   width: 100%;
@@ -4930,7 +5000,8 @@ select {
 
 .cd_section_1_text {
   max-width: 80%;
-  width: 100%; }
+  width: 100%;
+  margin: 5px 0 10px; }
   .cd_section_1_text p {
     font-family: "Conv_bpg_algeti", sans-serif;
     font-size: 16px;
