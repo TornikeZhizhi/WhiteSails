@@ -315,8 +315,16 @@ transition: all .5s .7s;
 		align-items: flex-start;
 		@include family(segoe);
 		    padding: 10px 5px;
+
+		    span {
+		    transition:all .4s;
+		    }
 		 &:hover .tel_info{
    				 	margin-right:120px;
+
+   				 	span:first-child {
+   				 		font-size:10px;
+   				 	}
 
    				 	.tel_hover {
    				 		width: 120px;

@@ -111,7 +111,7 @@
     .apartment_title {
       h3 {
         font-size: 80px;
-        @include family(noto);
+        @include family(notosans);
         color: #2c3e50;
       }
     }
@@ -553,18 +553,21 @@
         .def-input,
         textarea {
           width: 100%;
-          border-bottom: 1px solid #5e5e5e;
+        
           margin: 20px 0;
+
+
 
           input,textarea {
             color: #5e5e5e;
           padding: 10px;
+            border-bottom: 1px solid #707070;
           @include family(notosans);
             width: 100%;
 
             &::placeholder {
 
-          @include family(notosans);
+                @include family(notosans);
             }
 
             &::placeholder {
@@ -592,6 +595,7 @@
           height: 130px;
           text-transform: capitalize;
           color: #5e5e5e;
+          border-bottom: 1px solid #707070;
           margin-bottom: 40px;
           padding: 10px;
           @include family(notosans);
@@ -1264,3 +1268,6 @@ body {
     border:unset !important;
   }
 }
+
+
+

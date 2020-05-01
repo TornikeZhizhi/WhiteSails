@@ -2862,11 +2862,11 @@ abbr, acronym {
       font-family: "Conv_bpg_algeti", sans-serif;
       color: #2c3e50; }
       .floor-container .apartment_container .apartment_title h3:lang(en) {
-        font-family: "Noto Serif italic", sans-serif; }
+        font-family: "Noto Sans", sans-serif; }
       .floor-container .apartment_container .apartment_title h3:lang(ka) {
-        font-family: "Noto Serif italic", sans-serif; }
+        font-family: "Noto Sans", sans-serif; }
       .floor-container .apartment_container .apartment_title h3:lang(ru) {
-        font-family: "Noto Serif italic", sans-serif; }
+        font-family: "Noto Sans", sans-serif; }
     .floor-container .apartment_container .apartment_up_box {
       display: flex;
       width: 100%; }
@@ -3198,13 +3198,13 @@ abbr, acronym {
       .contact-container .map-container .form-container form .def-input,
       .contact-container .map-container .form-container form textarea {
         width: 100%;
-        border-bottom: 1px solid #5e5e5e;
         margin: 20px 0; }
         .contact-container .map-container .form-container form .def-input input, .contact-container .map-container .form-container form .def-input textarea,
         .contact-container .map-container .form-container form textarea input,
         .contact-container .map-container .form-container form textarea textarea {
           color: #5e5e5e;
           padding: 10px;
+          border-bottom: 1px solid #707070;
           font-family: "Conv_bpg_algeti", sans-serif;
           width: 100%; }
           .contact-container .map-container .form-container form .def-input input:lang(en), .contact-container .map-container .form-container form .def-input textarea:lang(en),
@@ -3254,6 +3254,7 @@ abbr, acronym {
         height: 130px;
         text-transform: capitalize;
         color: #5e5e5e;
+        border-bottom: 1px solid #707070;
         margin-bottom: 40px;
         padding: 10px;
         font-family: "Conv_bpg_algeti", sans-serif; }
@@ -4052,8 +4053,12 @@ body.nav-active .nav__list-item:nth-child(10) {
     font-family: "Conv_Segoe UI", sans-serif; }
   .header_call a:lang(ru) {
     font-family: "Conv_Segoe UI", sans-serif; }
+  .header_call a span {
+    transition: all .4s; }
   .header_call a:hover .tel_info {
     margin-right: 120px; }
+    .header_call a:hover .tel_info span:first-child {
+      font-size: 10px; }
     .header_call a:hover .tel_info .tel_hover {
       width: 120px; }
   .header_call a .tel_info {
@@ -5628,15 +5633,19 @@ select {
 
 .building_a .disable {
   fill: transparent; }
-.building_a .st0 {
+.building_a .st0, .building_a .floor_plan {
   fill: transparent;
   transition: all .4s;
   opacity: 0.8; }
-  .building_a .st0:hover {
+  .building_a .st0:hover, .building_a .floor_plan:hover {
     fill: #73CABE; }
 
 .common_building .st_common {
   opacity: 0.8;
   fill: transparent; }
+
+@media only screen and (max-width: 992px) {
+  .news-container {
+    padding: 0 0 20px 0; } }
 
 /*# sourceMappingURL=main.css.map */

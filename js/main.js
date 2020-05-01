@@ -156,7 +156,7 @@ var swiperOptions2 = {
   speed: 1000,
   grabCursor: true,
   watchSlidesProgress: true,
-  mousewheelControl: true,
+
   keyboardControl: true,
        pagination: {
         el: '.swiper-pagination',
