@@ -275,6 +275,12 @@
             }
 
             span:first-child {
+            
+              border-right:unset;
+            }
+
+            span:last-child {
+              padding:20px;
               margin-right: -5px;
             }
           }
@@ -1205,12 +1211,7 @@ body {
       }
   }
 
-  .vacant_quantity {
-
-    font-size:32px;
-    border-left:none !important;
-    padding: 12px 26px !important;
-  }
+  
 
   .building-info-box {
 
@@ -1271,3 +1272,9 @@ body {
 
 
 
+
+.faq-container .address-container .address-section .title-section {
+  
+    padding: 25px 0 15px !important;
+    margin-bottom: 13px !important;
+}

@@ -522,7 +522,7 @@ if ($(".grid").length > 0) {
   var valueUp = 0;
 
 
-  $(".floor_arrow.down").on("click",function(){
+  $(".floor_arrow.up").on("click",function(){
         console.log(valueUp,valueDown)
        if (valueUp >= 50) {
        valueUp = valueUp - 50
@@ -532,7 +532,7 @@ if ($(".grid").length > 0) {
 
   })
 
-  $(".floor_arrow.up").on("click",function(){
+  $(".floor_arrow.down").on("click",function(){
     
      if (floorHeight * hiddenFloors >= valueUp) {
       valueDown = valueDown + 50;

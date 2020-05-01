@@ -2992,6 +2992,9 @@ abbr, acronym {
               .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments span:lang(ru) {
                 font-family: "Noto Sans", sans-serif; }
             .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments span:first-child {
+              border-right: unset; }
+            .floor-container .apartment_container .building-section .building-info .building-info-box .vacant-apartments span:last-child {
+              padding: 20px;
               margin-right: -5px; }
       .floor-container .apartment_container .building-section .building-apartment-tab {
         bottom: 30px;
@@ -3691,11 +3694,6 @@ body {
 .floor_title * {
   color: #2C3E50; }
 
-.vacant_quantity {
-  font-size: 32px;
-  border-left: none !important;
-  padding: 12px 26px !important; }
-
 .building-info-box > div {
   width: 100%;
   max-width: 287px; }
@@ -3735,6 +3733,10 @@ body {
   border-bottom: 1px solid #f2f2f2; }
 .contact-container.contact .title-section {
   border: unset !important; }
+
+.faq-container .address-container .address-section .title-section {
+  padding: 25px 0 15px !important;
+  margin-bottom: 13px !important; }
 
 .swiper-container {
   width: 100%;
