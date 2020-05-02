@@ -2774,7 +2774,7 @@ abbr, acronym {
       height: 100%; }
 
 .floor-container {
-  padding: 100px 90px 60px 100px;
+  padding: 90px 90px 60px 100px;
   position: relative; }
   .floor-container .floor_tabs_fluid {
     position: absolute;
@@ -2905,7 +2905,7 @@ abbr, acronym {
     .floor-container .apartment_container .floor-section {
       display: flex;
       position: relative;
-      margin-top: 90px; }
+      margin-top: 60px; }
       .floor-container .apartment_container .floor-section .floor-image {
         width: 65%;
         z-index: 10; }
@@ -2919,7 +2919,7 @@ abbr, acronym {
         width: 60%;
         height: 90%;
         right: 0;
-        transform: translate(-5%, -50px); }
+        transform: translate(-5%, -30px); }
         .floor-container .apartment_container .floor-section .floor-info .floor-info-box {
           display: flex;
           flex-direction: column;
@@ -2930,9 +2930,25 @@ abbr, acronym {
           color: #2c3e50; }
           .floor-container .apartment_container .floor-section .floor-info .floor-info-box .floor-type {
             font-size: 24px; }
+            .floor-container .apartment_container .floor-section .floor-info .floor-info-box .floor-type * {
+              font-family: "Conv_bpg_algeti", sans-serif; }
+              .floor-container .apartment_container .floor-section .floor-info .floor-info-box .floor-type *:lang(en) {
+                font-family: "Noto Sans", sans-serif; }
+              .floor-container .apartment_container .floor-section .floor-info .floor-info-box .floor-type *:lang(ka) {
+                font-family: "Noto Sans", sans-serif; }
+              .floor-container .apartment_container .floor-section .floor-info .floor-info-box .floor-type *:lang(ru) {
+                font-family: "Noto Sans", sans-serif; }
           .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type {
             padding: 15px 0 10px;
             border-bottom: 1px solid #2c3e50; }
+            .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type * {
+              font-family: "Conv_bpg_algeti", sans-serif; }
+              .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type *:lang(en) {
+                font-family: "Noto Sans", sans-serif; }
+              .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type *:lang(ka) {
+                font-family: "Noto Sans", sans-serif; }
+              .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type *:lang(ru) {
+                font-family: "Noto Sans", sans-serif; }
             .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type span {
               padding-right: 25px; }
             .floor-container .apartment_container .floor-section .floor-info .floor-info-box .building-type img {
@@ -3737,6 +3753,19 @@ body {
 .faq-container .address-container .address-section .title-section {
   padding: 25px 0 15px !important;
   margin-bottom: 13px !important; }
+
+.space {
+  transition: all .3s;
+  opacity: 0;
+  visibility: hidden; }
+  .space.active {
+    opacity: 1;
+    visibility: visible; }
+
+.space sup {
+  top: -.5em;
+  font-size: 23px;
+  left: -1px; }
 
 .swiper-container {
   width: 100%;
@@ -5633,18 +5662,103 @@ select {
   max-width: 95%;
   margin: 5px 0 20px; }
 
-.building_a .disable {
-  fill: transparent; }
-.building_a .st0, .building_a .floor_plan {
+.building_a .st0, .building_a .floor_plan, .building_a .floor_f {
   fill: transparent;
   transition: all .4s;
   opacity: 0.8; }
-  .building_a .st0:hover, .building_a .floor_plan:hover {
+  .building_a .st0:hover, .building_a .floor_plan:hover, .building_a .floor_f:hover {
     fill: #73CABE; }
+
+svg .disable {
+  fill: transparent !important; }
 
 .common_building .st_common {
   opacity: 0.8;
   fill: transparent; }
+
+.sold_fluid {
+  background-color: #FC2424;
+  padding: 6px 11px;
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-24deg);
+  font-family: "Conv_bpg_algeti", sans-serif;
+  font-size: 10px; }
+  .sold_fluid:lang(en) {
+    font-family: "Noto Sans", sans-serif; }
+  .sold_fluid:lang(ka) {
+    font-family: "Noto Sans", sans-serif; }
+  .sold_fluid:lang(ru) {
+    font-family: "Noto Sans", sans-serif; }
+
+.reserved_fluid {
+  background-color: #FCA320;
+  padding: 6px 11px;
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  transform: rotate(-24deg);
+  font-family: "Conv_bpg_algeti", sans-serif;
+  font-size: 10px; }
+  .reserved_fluid:lang(en) {
+    font-family: "Noto Sans", sans-serif; }
+  .reserved_fluid:lang(ka) {
+    font-family: "Noto Sans", sans-serif; }
+  .reserved_fluid:lang(ru) {
+    font-family: "Noto Sans", sans-serif; }
+
+.floor_f_0 {
+  top: 33%;
+  left: 9%; }
+
+.floor_f_1 {
+  top: 21%;
+  left: 23%; }
+
+.floor_f_2 {
+  top: 21%;
+  left: 33%; }
+
+.floor_f_3 {
+  top: 17%;
+  left: 42%; }
+
+.floor_f_4 {
+  top: 17%;
+  left: 51%; }
+
+.floor_f_5 {
+  top: 17%;
+  left: 61%; }
+
+.floor_f_6 {
+  top: 17%;
+  left: 69%; }
+
+.floor_f_7 {
+  top: 30%;
+  left: 83%; }
+
+.floor_f_8 {
+  top: 67%;
+  left: 76%; }
+
+.floor_f_9 {
+  top: 62%;
+  left: 61%; }
+
+.floor_f_10 {
+  top: 62%;
+  left: 41%; }
+
+.floor_f_11 {
+  top: 70%;
+  left: 33%; }
+
+.floor_f_12 {
+  top: 70%;
+  left: 21%; }
 
 @media only screen and (max-width: 992px) {
   .news-container {

@@ -1,5 +1,5 @@
 .floor-container {
-  padding: 100px 90px 60px 100px;
+  padding: 90px 90px 60px 100px;
   position: relative;
 
    .floor_tabs_fluid{
@@ -166,7 +166,7 @@
     .floor-section {
       display: flex;
       position: relative;
-      margin-top: 90px;
+      margin-top: 60px;
 
       .floor-image {
         width: 65%;
@@ -185,7 +185,7 @@
         width: 60%;
         height: 90%;
         right: 0;
-        transform: translate(-5%, -50px);
+        transform: translate(-5%, -30px);
 
         .floor-info-box {
           display: flex;
@@ -198,11 +198,19 @@
 
           .floor-type {
             font-size: 24px;
+            
+            *{ 
+              @include family(notosans);
+             }
           }
 
           .building-type {
             padding: 15px 0 10px;
             border-bottom: 1px solid #2c3e50;
+
+            *{ 
+              @include family(notosans);
+             }
 
             span {
               padding-right: 25px;
@@ -1277,4 +1285,20 @@ body {
   
     padding: 25px 0 15px !important;
     margin-bottom: 13px !important;
+}
+
+.space {
+  transition:all .3s;
+  opacity:0;
+  visibility: hidden;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+.space sup {
+  top: -.5em;
+    font-size: 23px;
+    left: -1px;
 }

@@ -562,10 +562,6 @@ if ($(".grid").length > 0) {
 
 //svg js
 
- $('.common_building').on('click','.st0,.st_common',function(){
-      window.location = $(this).data('url');
-  });
-
 
  $(".building_a .st0").each(function(index,el){
 
@@ -590,5 +586,49 @@ if ($(".grid").length > 0) {
   })
 
  })
+
+ // floor js
+
+ $(".building_a .floor_f").each(function(index,el){
+  
+
+  var dataInfo = $(this).attr("data-info")
+
+  $(this).mouseenter(function(e){
+
+    $(".space").addClass("active")
+    $(".floor_m_info").text($(this).attr("data-m"))
+
+    if (dataInfo == "sold" || dataInfo == "reserved") {
+      $(this).addClass("disable")
+      e.preventDefault()
+    }
+
+  })
+
+
+  if (dataInfo == "sold") {
+      
+   $(".sold_wrapper").append(`<div class='sold_fluid floor_f_${index}'>SOLD<div/>`)
+
+  }else if (dataInfo == "reserved") {
+
+   $(".sold_wrapper").append(`<div class='reserved_fluid floor_f_${index}'>Reserved<div/>`)
+  }
+
+ })
+
+//location js
+
+ $('.common_building').on('click','.st0,.st_common',function(e){
+
+    if ($(this).attr("data-info") == "sold" || $(this).attr("data-info") == "reserved") {
+      e.preventDefault
+    }else {
+
+    window.location = $(this).data('url');
+    }
+  });
+
 
 })

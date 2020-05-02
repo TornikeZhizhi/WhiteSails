@@ -2,12 +2,8 @@
 
 .building_a {
 
-		.disable {
-
-	 	fill: transparent;
-			
-		}
-	 .st0,.floor_plan {
+	
+	 .st0,.floor_plan,.floor_f {
 	 	fill: transparent;
 	 	transition: all .4s;
 	 		opacity: 0.8;
@@ -19,7 +15,9 @@
 	 }
 }
 
-
+svg .disable {
+	fill:transparent !important;
+}
 .common_building {
 
 	.st_common {
@@ -27,3 +25,126 @@
 		fill: transparent;
 	}
 }
+
+
+.sold_fluid {
+
+	background-color: #FC2424;
+	padding: 6px 11px;
+	border-radius: 10px;
+	color: #fff;
+	position: absolute;
+	 transform: rotate(-24deg);
+	@include family(notosans);
+	font-size: 10px;
+
+
+}
+.reserved_fluid {
+	
+	background-color: #FCA320;
+	padding: 6px 11px;
+	border-radius: 10px;
+	color: #fff;
+	position: absolute;
+	 transform: rotate(-24deg);
+	@include family(notosans);
+	font-size: 10px;
+}
+
+
+.floor_f_0 {
+
+	    top: 33%;
+    left: 9%;
+}
+
+.floor_f_1 {
+    top: 21%;
+    left: 23%;
+}
+
+.floor_f_2 {
+
+	top: 21%;
+    left: 33%;
+}
+
+.floor_f_3 {
+
+	top: 17%;
+	left: 42%;
+
+}
+
+.floor_f_4 {
+
+	top: 17%;
+	left: 51%;
+
+}
+
+.floor_f_5 {
+
+	top: 17%;
+	left: 61%;
+
+}
+
+.floor_f_6 {
+
+	top: 17%;
+	left: 69%;
+
+}
+
+.floor_f_7 {
+
+	top: 30%;
+    left: 83%;
+
+}
+
+.floor_f_8 {
+    top: 67%;
+    left: 76%;
+	
+
+}
+
+.floor_f_9 {
+	top: 62%;
+    left: 61%;
+   
+
+
+}
+
+.floor_f_10{
+
+	top: 62%;
+    left: 41%;
+
+}
+
+.floor_f_11{
+
+	
+ top: 70%;
+    left: 33%;
+
+}
+
+
+.floor_f_12{
+
+	    top: 70%;
+    left: 21%;
+
+
+}
+
+
+
+
+
