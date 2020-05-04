@@ -630,5 +630,7 @@ if ($(".grid").length > 0) {
     }
   });
 
-
+$(document).on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
+  $(document).trigger('mousewheel');
+});
 })

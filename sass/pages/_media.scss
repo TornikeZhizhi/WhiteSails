@@ -90,7 +90,7 @@
     font-size: 38px;
 }
 .Whitesails_main_img img {
-    height: calc(100vh - 360px);
+    height: calc(100vh - 236px);
     width: 100%;
     object-fit: contain;
 }
@@ -180,6 +180,9 @@
 
 .cursor-dot-outline,.cursor-dot {
 	display: none;
+}
+.nav:before, .nav:after {
+	top: 79px;
 }
 
 }

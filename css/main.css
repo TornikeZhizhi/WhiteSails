@@ -5848,7 +5848,7 @@ svg .disable {
     font-size: 38px; }
 
   .Whitesails_main_img img {
-    height: calc(100vh - 360px);
+    height: calc(100vh - 236px);
     width: 100%;
     object-fit: contain; }
 
@@ -5922,7 +5922,10 @@ svg .disable {
     display: none; }
 
   .cursor-dot-outline, .cursor-dot {
-    display: none; } }
+    display: none; }
+
+  .nav:before, .nav:after {
+    top: 79px; } }
 @media only screen and (min-width: 992px) {
   .header_social.resp {
     display: none; } }
