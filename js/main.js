@@ -589,6 +589,7 @@ if ($(".grid").length > 0) {
 
  // floor js
 
+//floor f
  $(".building_a .floor_f").each(function(index,el){
   
 
@@ -605,8 +606,6 @@ if ($(".grid").length > 0) {
     }
 
   })
-
-
   if (dataInfo == "sold") {
       
    $(".sold_wrapper").append(`<div class='sold_fluid floor_f_${index}'>SOLD<div/>`)
@@ -614,6 +613,36 @@ if ($(".grid").length > 0) {
   }else if (dataInfo == "reserved") {
 
    $(".sold_wrapper").append(`<div class='reserved_fluid floor_f_${index}'>Reserved<div/>`)
+  }
+
+ })
+
+ //floor a-e
+
+
+ $(".building_a .floor_a").each(function(index,el){
+  
+
+  var dataInfo = $(this).attr("data-info")
+
+  $(this).mouseenter(function(e){
+    console.log($(this).attr("data-m"))
+    $(".space").addClass("active")
+    $(".floor_m_info").text($(this).attr("data-m"))
+
+    if (dataInfo == "sold" || dataInfo == "reserved") {
+      $(this).addClass("disable")
+      e.preventDefault()
+    }
+
+  })
+  if (dataInfo == "sold") {
+      
+   $(".sold_wrapper").append(`<div class='sold_fluid floor_a_${index}'>SOLD<div/>`)
+
+  }else if (dataInfo == "reserved") {
+
+   $(".sold_wrapper").append(`<div class='reserved_fluid floor_a_${index}'>Reserved<div/>`)
   }
 
  })

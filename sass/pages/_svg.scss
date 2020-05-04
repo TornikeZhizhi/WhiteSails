@@ -23,6 +23,11 @@ svg .disable {
 	.st_common {
 		opacity: 0.8;
 		fill: transparent;
+		transition: all .4s;
+
+		&:hover{
+			fill:#73CABE;
+		}
 	}
 }
 
@@ -141,10 +146,97 @@ svg .disable {
 	    top: 70%;
     left: 21%;
 
+}
+
+.floor_a_0 {
+
+	    top: 21%;
+    left: 21%;
+}
+
+.floor_a_1 {
+  top: 24%;
+    left: 32%;
+}
+
+.floor_a_2 {
+
+	top: 26%;
+    left: 41%;
+}
+
+.floor_a_3 {
+
+	top: 29%;
+    left: 61%;
+
+}
+
+.floor_a_4 {
+
+	top: 20%;
+    left: 72%;
+
+}
+
+.floor_a_5 {
+
+	    top: 56%;
+    left: 82%;
+
+
+}
+
+.floor_a_6 {
+
+top: 69%;
+    left: 69%;
+}
+
+.floor_a_7 {
+
+	    top: 74%;
+    left: 60%;
+}
+
+.floor_a_8 {
+       top: 76%;
+    left: 51%;
+	
+
+}
+
+.floor_a_9 {
+    top: 74%;
+    left: 42%;
+   
+
+
+}
+
+.floor_a_10{
+
+	top: 74%;
+    left: 33%;
+
+}
+
+.floor_a_11{
+
+	
+top: 69%;
+    left: 24%;
 
 }
 
 
+.floor_a_12{
+
+	     top: 60%;
+    left: 12%;
+
+
+}
 
 
 
