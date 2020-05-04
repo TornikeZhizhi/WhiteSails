@@ -169,8 +169,12 @@
       margin-top: 60px;
 
       .floor-image {
-        width: 65%;
+        /*width: 65%;*/
         z-index: 10;
+
+        svg  {
+          height: calc(100vh - 311px);
+        }
 
         img {
           width: 100%;
@@ -198,7 +202,7 @@
 
           .floor-type {
             font-size: 24px;
-            
+
             *{ 
               @include family(notosans);
              }
