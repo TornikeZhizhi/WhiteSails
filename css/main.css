@@ -5826,7 +5826,103 @@ svg .disable {
     padding: 0 0 20px 0; }
 
   .header_languages {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .nav__list li:nth-child(1) a, .nav__list li:nth-child(2) a,
+  .nav__list li:nth-child(3) a {
+    font-size: 30px; }
+
+  .nav__list-item {
+    margin-bottom: 5px !important; }
+
+  .cd_section_1_fluid, .home_aparment_fluid {
+    flex-wrap: wrap; }
+
+  .cd_section_1_fluid > div {
+    flex: 1 0 100% !important;
+    max-width: 100% !important;
+    transform: unset !important;
+    padding: 1% 0% 1% 3% !important; }
+
+  .cd_section_1_title h2, .cd_section_1_title a {
+    font-size: 38px; }
+
+  .Whitesails_main_img img {
+    height: calc(100vh - 360px);
+    width: 100%;
+    object-fit: contain; }
+
+  .fixed_navigation {
+    display: none; }
+
+  .cd_section_1_fluid .cd_section_left {
+    justify-content: unset;
+    padding-bottom: 1%;
+    transform: unset; }
+
+  .Whitesails_main_about_right_fluid {
+    position: unset; }
+
+  .home_about_trigger_right, .home_about_trigger_left {
+    display: none; }
+
+  .home_about_slider {
+    width: 100%;
+    height: calc(100vh - 341px); }
+
+  .home_aparment_fluid {
+    flex: 0 0 100% !important;
+    max-width: 100% !important; }
+
+  .home_aparment_fluid > div:first-child .cd_section_left {
+    display: unset; }
+
+  .cd-section-infrastruqture {
+    background-color: #F4FAFA;
+    padding: 40px 10px 10px 14px; }
+
+  .infrastruqture_text {
+    position: unset; }
+
+  .infrastruqture_text h3 {
+    font-size: 35px; }
+
+  .infrastruqture_slider {
+    height: calc(100vh - 260px); }
+
+  .home_advantages_fluid {
+    padding: 10px 1% 0 10px !important; }
+    .home_advantages_fluid > div {
+      max-width: 100% !important;
+      flex: 0 0 100% !important; }
+
+  .home_aparment_fluid {
+    display: block; }
+    .home_aparment_fluid > div {
+      max-width: 100%;
+      height: unset !important; }
+
+  .home_apartment_right_fluid {
+    position: unset; }
+
+  .home_advantages_fluid .home_advantage_left {
+    padding: 0 !important; }
+
+  .home_apartment_right_fluid {
+    padding-top: 5px; }
+
+  #draggable {
+    height: 100%;
+    width: 100vw; }
+
+  .home_advantages_fluid .slider_for_box {
+    display: block; }
+
+  .home_advantages_fluid .home_advantage_right {
+    display: none; }
+
+  .cursor-dot-outline, .cursor-dot {
+    display: none; } }
 @media only screen and (min-width: 992px) {
   .header_social.resp {
     display: none; } }
