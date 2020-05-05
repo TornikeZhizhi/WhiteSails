@@ -5951,12 +5951,43 @@ svg .disable {
   .header_languages {
     margin-left: 0; }
 
+  .infrastruqture_slider .swiper-slide .infrastucture_slider_img a .infrastuqture_slider_title {
+    font-size: 16px; }
+
+  .infrastruqture_slider {
+    height: unset !important;
+    padding-bottom: 10px;
+    margin-top: 10px; }
+
+  .infrastruqture_slider .slide-inner {
+    flex-wrap: wrap; }
+    .infrastruqture_slider .slide-inner > div:first-child {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 150px; }
+      .infrastruqture_slider .slide-inner > div:first-child a {
+        width: 50%;
+        margin: 0 auto; }
+
+  .infrastruqture_slider .swiper-slide .infrastucture_slider_img {
+    height: 150px;
+    width: 48%;
+    max-width: 48%;
+    margin-bottom: 10px; }
+
+  .infrastruqture_slider .swiper-slide .infrastucture_slider_img a {
+    padding: 0;
+    height: 100%; }
+
+  .home_advantages_fluid .slider_for_box .cd_section_left .cd_section_1_title {
+    transform: translateY(0) !important; }
+
   .nav__list li:nth-child(1) a, .nav__list li:nth-child(2) a,
   .nav__list li:nth-child(3) a {
     font-size: 30px; }
 
   .nav__list-item {
-    margin-bottom: 5px !important; }
+    margin-bottom: 10px !important; }
 
   .cd_section_1_fluid, .home_aparment_fluid {
     display: block; }
@@ -5983,6 +6014,12 @@ svg .disable {
     margin: 10px 0 15px; }
   #home_wrapper .cd-section:last-child .draggable {
     width: 190vw; }
+  #home_wrapper .cd-section:last-child .nav__content {
+    top: 80px; }
+  #home_wrapper .cd-section:last-child .navigation {
+    padding: 17px 1% 1% 20px; }
+  #home_wrapper .cd-section:last-child .nav__list li a {
+    font-size: 20px; }
 
   .Whitesails_main_img img {
     height: 255px;
@@ -6089,7 +6126,7 @@ svg .disable {
     display: none !important; }
 
   .nav:before, .nav:after {
-    top: 79px; }
+    top: 80px; }
 
   .select_aparment_fluid {
     flex-direction: column;
