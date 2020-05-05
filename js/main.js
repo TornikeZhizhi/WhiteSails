@@ -134,7 +134,34 @@ $('.interios_slider').slick({
   speed:1100,
   autoplaySpeed: 3000,
   prevArrow: $(".interior_slider_left"),
-    nextArrow: $(".interior_slider_right")
+    nextArrow: $(".interior_slider_right"),
+    responsive: [
+    {
+      breakpoint: 1250,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+  
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+  
+      }
+    },
+       {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+  
+      }
+    }
+
+    ]
 
 });
 

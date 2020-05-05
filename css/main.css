@@ -4464,7 +4464,7 @@ body.nav-active .navigation_footer span {
     position: absolute;
     display: block;
     left: 7px;
-    top: 25px;
+    top: 22px;
     transform: translateY(-50%);
     font-family: "Conv_dejavu-sans", sans-serif;
     color: #707070; }
@@ -5969,7 +5969,8 @@ svg .disable {
     position: unset; }
 
   .home_advantages_fluid .home_advantage_left {
-    padding: 0 !important; }
+    padding: 0 !important;
+    height: unset !important; }
 
   .home_apartment_right_fluid {
     padding-top: 5px; }
@@ -6050,7 +6051,7 @@ svg .disable {
       margin-bottom: 12px; }
 
   .p-all {
-    padding: 83px 12px 10px 5px; }
+    padding: 83px 0px 10px 5px; }
 
   .contact_title * {
     font-size: 44px; }
@@ -6065,12 +6066,71 @@ svg .disable {
 
   .search_footer {
     flex-direction: column-reverse;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .interior_inner_fluid .grid-item {
+    width: 30.5%; }
+
+  .interior_inner_fluid .interior_masorny {
+    margin-top: 10px; }
+
+  .apartment_title h3 {
+    font-size: 44px; }
+
+  .faq-container .address-container .title {
+    font-size: 44px;
+    padding: 2px 0 10px; }
+
+  .container {
+    max-width: 870px; }
+
+  .contact-container .title {
+    padding-bottom: 5px;
+    font-size: 44px; }
+
+  .gallery_wrapper {
+    width: 98%;
+    margin: 0 auto; }
+
+  .apartemtn_left_svg {
+    height: 370px; }
+
+  .apartment_up_box {
+    display: block; }
+
+  .apartment_right_content .apartment_order_form > div {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .apartment_up_box > div:first-child {
+    max-width: 400px;
+    margin: 0 auto; }
+
+  .pdf_link {
+    justify-content: center; }
+
+  .apartment_up_box > div:last-child {
+    margin-top: 15px; }
+
+  .gallery_container .grid-item {
+    width: 30%; }
+
+  .common-w {
+    padding: 10px 10px; }
+
+  .similar_ap_container {
+    padding: 0 5px; }
+
+  .similar_aparment_fluid .similar_ap_title h3 {
+    font-size: 38px; } }
+@media only screen and (max-width: 776px) {
+  .similar_ap_container {
+    flex-wrap: wrap; }
+    .similar_ap_container > div {
+      max-width: 100%;
+      flex: 0 0 100%; } }
 @media only screen and (min-width: 992px) {
   .header_social.resp {
     display: none; } }
-@media (min-width: 768px) {
-  .container {
-    max-width: 870px; } }
 
 /*# sourceMappingURL=main.css.map */
