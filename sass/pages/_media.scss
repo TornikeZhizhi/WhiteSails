@@ -61,6 +61,17 @@
 
 @media only screen and (max-width: 992px) {
 
+	.nav__content {
+	top:80px;
+}
+.navigation {
+    padding: 17px 1% 1% 20px;
+}
+
+.nav__list li a {
+	font-size: 20px;
+}
+
 .cd-section {
 	position: unset !important;
 	transform: unset !important;
@@ -163,16 +174,7 @@ max-width: 48%;
 .draggable {
 	width: 190vw;
 }
-.nav__content {
-	top:80px;
-}
-.navigation {
-    padding: 17px 1% 1% 20px;
-}
 
-.nav__list li a {
-	font-size: 20px;
-}
 
 }
 

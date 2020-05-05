@@ -5937,6 +5937,15 @@ svg .disable {
     width: 100%;
     margin-bottom: 25px; } }
 @media only screen and (max-width: 992px) {
+  .nav__content {
+    top: 80px; }
+
+  .navigation {
+    padding: 17px 1% 1% 20px; }
+
+  .nav__list li a {
+    font-size: 20px; }
+
   .cd-section {
     position: unset !important;
     transform: unset !important; }
@@ -6014,12 +6023,6 @@ svg .disable {
     margin: 10px 0 15px; }
   #home_wrapper .cd-section:last-child .draggable {
     width: 190vw; }
-  #home_wrapper .cd-section:last-child .nav__content {
-    top: 80px; }
-  #home_wrapper .cd-section:last-child .navigation {
-    padding: 17px 1% 1% 20px; }
-  #home_wrapper .cd-section:last-child .nav__list li a {
-    font-size: 20px; }
 
   .Whitesails_main_img img {
     height: 255px;
