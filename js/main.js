@@ -122,7 +122,17 @@ $('.home_about_slider').slick({
   speed:1100,
   autoplaySpeed: 3000,
   prevArrow: $(".home_about_trigger_left"),
-    nextArrow: $(".home_about_trigger_right")
+    nextArrow: $(".home_about_trigger_right"),
+
+     responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+  
+      }
+    }]
 
 });
 $('.interios_slider').slick({

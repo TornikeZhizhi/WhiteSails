@@ -89,7 +89,7 @@
 	margin-bottom: 5px !important;
 }
 .cd_section_1_fluid,.home_aparment_fluid {
-	flex-wrap: wrap;
+	display: block;
 }
 .cd_section_1_fluid > div {
     flex: 1 0 100% !important;
@@ -101,10 +101,40 @@
 .cd_section_1_title h2, .cd_section_1_title a {
     font-size: 38px;
 }
+
+#home_wrapper .cd-section:first-child {
+	background-color: #F4FAFA;
+	padding-top: 15px;
+}
+
+#home_wrapper .cd-section:last-child {
+.home_apartment_right_fluid{
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: #F4FAFA;
+	align-items: center;
+}
+.common_aparment_tab_fluid {
+	margin: 10px 0 15px;
+}
+
+.draggable {
+	width: 190vw;
+}
+
+}
+
+
+
+
 .Whitesails_main_img img {
-    height: calc(100vh - 236px);
+    height:255px;
     width: 100%;
     object-fit: contain;
+}
+
+.cd-section {
+	height: unset;
 }
 
 .fixed_navigation {
@@ -116,7 +146,10 @@
 	transform: unset;
 }
 .Whitesails_main_about_right_fluid {
-	position: unset;
+	position: relative;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 .home_about_trigger_right, .home_about_trigger_left{
@@ -124,8 +157,27 @@
 }
 .home_about_slider {
     width: 100%;
-    height: calc(100vh - 341px);
+    height: 230px;
+
+     .slick-list {
+    	padding: 0 25% 0 0 !important;
+	}
 }
+
+.home_about_trigger_left {
+ 
+    width: 54%;
+ 
+
+}
+
+
+.home_about_trigger_right {
+    left: 55%;
+    width: 45%;
+
+}
+
 .home_aparment_fluid {
 	flex: 0 0 100% !important;
 	max-width: 100% !important
@@ -135,7 +187,7 @@
 }
 .cd-section-infrastruqture {
     background-color: #F4FAFA;
-    padding: 40px 10px 10px 14px;
+    padding: 15px 10px 10px 10px !important;
 }
 
 .infrastruqture_text {
@@ -151,7 +203,7 @@
 }
 
 .home_advantages_fluid {
-	
+	display: block;
 	padding: 10px 1% 0 10px !important;
 
 	&>div {
@@ -185,14 +237,24 @@
     width: 100vw;
 }
 .home_advantages_fluid .slider_for_box {
-	display: block;
+	display: flex;
+	flex-direction: column-reverse;
 }
-.home_advantages_fluid .home_advantage_right {
+.our_advantage_title {
 	display: none;
 }
 
-.cursor-dot-outline,.cursor-dot {
-	display: none;
+.slider_next_title_box {
+	margin-top: 0;
+	    flex-direction: column;
+    align-items: center;
+}
+.home_advantages_fluid .slider_next_title {
+	margin: 0 0 20px;
+	    padding: 13px 42px;
+}
+.cursor-dot-outline,.cursor-dot,.slider_next_img  {
+	display: none !important;
 }
 .nav:before, .nav:after {
 	top: 79px;
@@ -366,6 +428,12 @@
 	font-size: 38px;
 }
 
+#home_wrapper {
+	padding-top: 80px;
+}
+.home_dots{
+	display: none;
+}
 }
 
 
