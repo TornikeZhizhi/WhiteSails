@@ -5728,6 +5728,10 @@ svg .disable {
   .reserved_fluid:lang(ru) {
     font-family: "Noto Sans", sans-serif; }
 
+.building_cd {
+  height: unset !important;
+  width: calc(100vw - 570px) !important; }
+
 .floor_f_0 {
   top: 33%;
   left: 9%; }
@@ -5831,6 +5835,62 @@ svg .disable {
 .floor_a_12 {
   top: 60%;
   left: 12%; }
+
+.floor_cd_0 {
+  top: 20%;
+  left: 16%; }
+
+.floor_cd_1 {
+  top: 21%;
+  left: 24%; }
+
+.floor_cd_2 {
+  top: 21%;
+  left: 31%; }
+
+.floor_cd_3 {
+  top: 20%;
+  left: 62%; }
+
+.floor_cd_4 {
+  top: 18%;
+  left: 70%; }
+
+.floor_cd_5 {
+  top: 20%;
+  left: 79%; }
+
+.floor_cd_6 {
+  top: 43%;
+  left: 90%; }
+
+.floor_cd_7 {
+  top: 47%;
+  left: 3%; }
+
+.floor_cd_8 {
+  top: 73%;
+  left: 80%; }
+
+.floor_cd_9 {
+  top: 73%;
+  left: 14%; }
+
+.floor_cd_10 {
+  top: 73%;
+  left: 63%; }
+
+.floor_cd_11 {
+  top: 73%;
+  left: 31%; }
+
+.floor_cd_12 {
+  top: 43%;
+  left: 53%; }
+
+.floor_cd_13 {
+  top: 43%;
+  left: 40%; }
 
 @media only screen and (max-width: 1200px) {
   .cd_section_1_title h2, .cd_section_1_title a {

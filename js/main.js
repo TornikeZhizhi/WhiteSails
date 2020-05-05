@@ -674,6 +674,36 @@ if ($(".grid").length > 0) {
 
  })
 
+ //floor cd
+
+
+ $(".building_a .floor_cd").each(function(index,el){
+  
+
+  var dataInfo = $(this).attr("data-info")
+
+  $(this).mouseenter(function(e){
+    console.log($(this).attr("data-m"))
+    $(".space").addClass("active")
+    $(".floor_m_info").text($(this).attr("data-m"))
+
+    if (dataInfo == "sold" || dataInfo == "reserved") {
+      $(this).addClass("disable")
+      e.preventDefault()
+    }
+
+  })
+  if (dataInfo == "sold") {
+      
+   $(".sold_wrapper").append(`<div class='sold_fluid floor_cd_${index}'>SOLD<div/>`)
+
+  }else if (dataInfo == "reserved") {
+
+   $(".sold_wrapper").append(`<div class='reserved_fluid floor_cd_${index}'>Reserved<div/>`)
+  }
+
+ })
+
 //location js
 
  $('.common_building').on('click','.st0,.st_common',function(e){
