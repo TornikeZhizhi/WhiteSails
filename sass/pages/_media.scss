@@ -610,6 +610,10 @@ interior_slider_left {
   height: 10px;
 }
 
+.floor_image_wrapper::-webkit-scrollbar-track{
+  background: #FFD493; 
+}
+
 .similar_ap_container {
 
 		flex-wrap: wrap;
