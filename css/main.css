@@ -6354,6 +6354,10 @@ svg .disable {
       max-width: 100%;
       flex: 0 0 100%; }
 
+  .about-container .about-swiper-container .swiper-wrapper .swiper-slide img {
+    height: 200px;
+    object-fit: cover; }
+
   .about-container .about-swiper-container .swiper-wrapper .swiper-slide {
     opacity: 1; }
 
@@ -6390,7 +6394,11 @@ svg .disable {
     order: unset; }
 
   .offer-section .offer-img {
+    flex: 0 0 95%;
+    max-width: 95%;
     margin-top: 10px; }
+    .offer-section .offer-img img {
+      height: 200px !important; }
 
   .about_swipper_wrapper .swiper_about_button-next {
     width: 22.5%;

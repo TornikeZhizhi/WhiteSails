@@ -625,6 +625,11 @@ interior_slider_left {
 
 }
 
+.about-container .about-swiper-container .swiper-wrapper .swiper-slide img {
+	height: 200px;
+	object-fit: cover;
+}
+
 .about-container .about-swiper-container .swiper-wrapper .swiper-slide {
 	opacity: 1;
 }
@@ -667,7 +672,13 @@ order: unset;
 
  }
 .offer-section .offer-img {
+
+	flex: 0 0 95%;
+	max-width: 95%;
 	margin-top: 10px;
+	 img {
+	 	height: 200px !important;
+	 }
 }
 
 
