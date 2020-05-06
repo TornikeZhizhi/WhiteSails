@@ -511,7 +511,19 @@ if ($(".grid").length > 0) {
     nextEl: ".swiper_about_button-next",
     prevEl: ".swiper_about_button-prev"
   },
+   breakpoints: {
+        0: {
+          slidesPerView: 1.3,
+          spaceBetween: -10,
+        },
+        768: {
+          slidesPerView: 3,
+  
+        }
+        
+      }
   })
+
 
 
 //range sider

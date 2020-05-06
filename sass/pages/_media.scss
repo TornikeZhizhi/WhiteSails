@@ -217,6 +217,28 @@ max-width: 48%;
     	padding: 0 25% 0 0 !important;
 	}
 }
+.interior_slider_right {
+  
+    width: 21%;
+}
+interior_slider_left {
+	display: none;
+}
+.interior_fluid .slick-slide img {
+	opacity: 1;
+}
+.interios_slider figure a .masorny_hover {
+	transform: scale(1);
+}
+.interior_slider_box {
+
+	.interios_slider {
+		width: 100%;
+	}
+	 .slick-list {
+    	padding: 0 20% 0 0 !important;
+	}
+}
 
 .home_about_trigger_left {
  
@@ -348,7 +370,9 @@ max-width: 48%;
 	margin-bottom: 10px;
 }
 .common_aparment_tab_fluid {
-	position: unset;
+	position: unset !important;
+	margin: 12px auto 0;
+    max-width: 229px;
 }
 .select_aparment_fluid #apartments_select_svg {
 	width: 100vw;
@@ -360,7 +384,7 @@ max-width: 48%;
 .aparment_filter_fluid {
     padding: 21px 32px 10px 16px;
     margin-top: 10px;
-        max-width: 300px;
+        max-width: 400px;
     width: unset;
 }
 .filter_dropdowns {
@@ -373,7 +397,9 @@ max-width: 48%;
 
 	}
 }
-
+.apartments_filter_button {
+	margin-top: 7px;
+}
 .aparment_filter_fluid .filter_sliders_fluid {
 	flex-direction: column-reverse;
 	align-items: center;
@@ -385,7 +411,7 @@ max-width: 48%;
     width: 100%;
 	}
 	&>div:first-child{
-		margin-bottom:12px;
+		margin:12px 0;
 	}
 }
 .p-all {
@@ -449,8 +475,18 @@ max-width: 48%;
     height: 370px;
 }
 
+.about-container .title {
+	font-size: 45px;
+}
+
 .apartment_up_box {
 	display: block;
+	margin-top: 10px;
+}
+
+
+.pdf_link a {
+	font-size: 13px;
 }
 .apartment_right_content .apartment_order_form > div {
     flex: 0 0 100%;
@@ -488,10 +524,91 @@ max-width: 48%;
 .home_dots{
 	display: none;
 }
+
+
+.common_tab_links,.floor_tabs_fluid {
+	display: none;
+}
+.search_footer {
+
+	.home_dots {
+		display: block !important;
+	}
+}
+.sold_fluid {
+    padding: 3px 7px;
+    }
+
+.floor-container .apartment_container .floor-section .floor-image svg{
+	width: 100% !important;
+	height: auto;
+}
+.floor-container .apartment_container .floor-section .floor-info .floor-info-box{
+	    padding: 20px 20px 0px 20px;
+}
+
+.floor-container .apartment_container .apartment_header {
+	padding: 0 10px;
+}
+
+.floor-info {
+ 
+  width: 100% !important;
+  padding: 0 10px;
+  transform:unset !important;
+  position: relative !important;
+
+  &:after{
+  	position:absolute;
+  	content: "";
+  	bottom: 0;
+  	left: 0;
+  	background-color: #FFD493;
+  	width: 100%;
+  	height: 200%;
+  	z-index: -1;
+  }
+
+  .floor-info-box {
+    float: unset;
+  }
+}
+.floor-container {
+	background-color: #F4FAFA;
+}
+
 }
 
 
+
 @media only screen and (max-width: 776px) {
+.floor_image_wrapper {
+	overflow: auto;
+	position: relative;
+	z-index: 1000;
+
+	.floor-image:after{
+			position:absolute;
+  	content: "";
+  	bottom: 0;
+  	left: 0;
+  	background-color: #FFD493;
+  	width: 100%;
+  	height: 70%;
+  	z-index: -1;
+	}
+
+	
+
+
+	&>div {
+		width: 150vw !important;
+	}
+}
+
+.floor_image_wrapper::-webkit-scrollbar {
+  height: 10px;
+}
 
 .similar_ap_container {
 
@@ -503,8 +620,74 @@ max-width: 48%;
 		}
 
 }
+
+.about-container .about-swiper-container .swiper-wrapper .swiper-slide {
+	opacity: 1;
 }
 
+#fullpage .offer-container h2 {
+	font-size: 26px;
+}
+.offer-section {
+    padding: 0px 10px 10px 10px;
+}
+
+.offer-section {
+	flex-direction: column;
+}
+.offer_text_fluid .offer-title {
+	margin-bottom: 5px;
+}
+.about-container {
+	padding: 10px 0 10px;
+}
+.swiper_about_button-prev {
+	display: none;
+}
+
+.offer_text_fluid .offer-title {
+	font-size: 24px;
+}
+
+.offer-section .offer_text_fluid {
+    background-color: #F4FAFA;
+   padding: 15px 40px 15px 15px;
+   transform: unset;
+
+}
+#fullpage .section:nth-child(odd) .offer_text_fluid {
+	transform: unset;
+}
+#fullpage .section:nth-child(odd) .offer-section .offer-img{ 
+order: unset;
+
+ }
+.offer-section .offer-img {
+	margin-top: 10px;
+}
+
+
+.about_swipper_wrapper .swiper_about_button-next {
+ 
+    width: 22.5%;
+   
+    opacity: 0.5;
+    background: #fff;
+}
+
+.about-container .about-swiper-container {
+	width: 100vw;
+	transform:unset;
+}
+.about-container .about-content {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    margin:0;
+
+}
+
+}
 
 @media only screen and (min-width: 992px) {
 .header_social.resp {

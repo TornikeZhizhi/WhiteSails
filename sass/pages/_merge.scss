@@ -345,7 +345,7 @@
 
 @media only screen and (max-width: 991px) {
   .floor-container {
-    padding: 100px 15px;
+    padding:100px 0px 10px;
 
     .apartment_container {
       .floor-apartment-tab {
@@ -353,37 +353,24 @@
       }
 
       .apartment_header {
-        flex-direction: column;
+      
 
         .apartment_title {
           text-align: center;
-          padding: 15px 0;
 
           h3 {
-            font-size: 40px;
+            font-size: 30px;
           }
         }
       }
 
       .floor-section {
         flex-direction: column;
-        padding-bottom: 70px;
-        margin-top: 40px;
+        padding-bottom: 0px;
+        margin-top: 20px;
 
-        .floor-image {
-          width: 100% !important;
-        }
+        
 
-        .floor-info {
-          position: unset !important;
-          width: 100% !important;
-          transform: unset !important;
-          margin-top: 15px;
-
-          .floor-info-box {
-            float: unset;
-          }
-        }
       }
 
       .building-section {
