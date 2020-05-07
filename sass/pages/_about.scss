@@ -213,11 +213,6 @@
 }
 
 
-#fullpage {
-    .section {
-      position: relative;
-
-
       .about_menu {
         position: absolute;
         right: 5%;
@@ -259,6 +254,16 @@
         &>li {
           margin-bottom: 10px;
 
+          &.active {
+
+              .dot_title {
+
+                  transform: translateY(-50%) translateX(0px) !important;
+                  opacity: 1 !important;
+                  visibility: visible !important;
+              }
+          }
+
              &:first-child {
                 display:none !important;
             }
@@ -273,14 +278,7 @@
               position: relative;
             
 
-              &:hover {
-                .dot_title {
-                  transform: translateY(-50%) translateX(0px);
-                  opacity: 1;
-                  visibility: visible;
-                }
-              }
-
+        
 
               &:after{
 
@@ -298,6 +296,11 @@
           }
         }
       }
+#fullpage {
+    .section {
+      position: relative;
+
+
     }
     .section:nth-child(2){
 

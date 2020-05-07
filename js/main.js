@@ -599,7 +599,13 @@ if ($(".grid").length > 0) {
      var myFullpage = new fullpage('#fullpage', {
         anchors: ['section0', 'section1', 'section2', 'section3','section4','section5','section6','section7','section8','section9','section10','section11','section12'],
 
-        scrollOverflow: true
+        scrollOverflow: true,
+        afterLoad: function(origin, destination, direction){
+
+          console.log(destination.index)
+          $(".about_menu li").removeClass("active")
+          $(".about_menu li").eq(destination.index).addClass("active")
+        }
     });
 
     $("#fullpage .section").each(function(index,el) {
